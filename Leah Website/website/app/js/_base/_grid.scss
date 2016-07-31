@@ -1,0 +1,400 @@
+﻿//
+//  Grid System
+//  -----------------
+//  Default grid system
+//
+//    1. Main Grid Variables
+//    2. General Layout Classes
+//    3. Grid Classes
+//    4. Offset Classes
+//    5. Miscellaneous
+//    6. Margin Helper Classes
+//    7. Padding Helper Classes
+//
+//
+//  1. Main Grid Variables
+//  -------------------
+
+//  Maximum site width
+$site-width: 1000px;
+
+//  Default number of columns
+$columns: 12;
+
+//  Gutter width computation
+$gutter: 20px;
+
+//  Break point for small devices
+$break-small: 640px;
+
+//  Break point for large devices
+$break-large: 900px;
+
+
+.grid-page {
+
+  .content {
+    background-color: $xlight-green;
+    padding: 20px;
+  }
+
+  .navigation {
+    background-color: $xlight-grey;
+    padding: 20px;
+  }
+}
+
+//
+//  2. General Layout Classes
+//  -------------------------
+.container {
+  margin: 0 auto;
+  max-width: $site-width;
+  
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  
+  &:after {
+    clear: both;
+  }
+}
+
+&.fixed {
+  width: $site-width;
+}
+
+.row {
+  clear: both;
+  margin: 0 -10px;
+  position: relative;
+  
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  
+  &:after {
+    clear: both;
+  }
+
+  .no-padding-right {
+    border-right: 0;
+  }
+
+  .no-padding-left {
+    border-left: 0;
+  }
+
+  .no-padding {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+//
+//  3. Grid Classes
+//  ---------------
+
+//  General stylings that apply to
+//  all classes of the grid
+[class^="small-"],
+[class^="medium-"],
+[class^="large-"] {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  box-sizing: border-box;
+  float: left;
+}
+
+//  Apply to the last child of a row
+//  to remove the right margin. Specifically
+//  needed for IE 7/8.
+.last {
+  margin-right: 0;
+}
+
+// Show / Hide Classes
+// scss-lint:disable ImportantRule
+.show-for-small-only {
+  display: none !important;
+}
+// scss-lint:enable ImportantRule
+
+//  Large Grid Classes
+@for $i from 1 through $columns {
+  .large-#{$i} {
+    width: 100% / ($columns / $i);
+  }
+
+  .large-#{$i}.no-padding {
+    margin-right: 0;
+    width: (100 / $columns) * $i * 1%;
+  }
+}
+
+//  Medium Grid Classes
+@media screen and (min-width: $break-small) and (max-width: $break-large) {
+  @for $i from 1 through $columns {
+    .medium-#{$i} {
+      width: 100% / ($columns / $i);
+    }
+
+    .medium-#{$i}.no-padding {
+      margin-right: 0;
+      width: (100 / $columns) * $i * 1%;
+    }
+  }
+
+  .hide-for-medium-only {
+    display: none;
+  }
+}
+
+//  Small Grid Classes
+@media screen and (max-width: $break-small) {
+  @for $i from 1 through $columns {
+    .small-#{$i} {
+      width: 100% / ($columns / $i);
+    }
+
+    .small-#{$i}.no-padding {
+      margin-right: 0;
+      width: (100 / $columns) * $i * 1%;
+    }
+  }
+
+  // scss-lint:disable ImportantRule
+  .hide-for-small-only {
+    display: none !important;
+  }
+  // scss-lint:enable ImportantRule
+
+  // scss-lint:disable ImportantRule
+  .show-for-small-only {
+    display: block !important;
+  }
+  // scss-lint:enable ImportantRule
+
+  .small-full-width {
+    margin: 0 -10px;
+  }
+}
+
+//
+//  4. Offset Classes
+//  --------------
+
+//  Large Offset
+@media screen and (min-width: $break-large) {
+  @for $i from 1 through $columns {
+    .large-offset-#{$i} {
+      margin-left: 100 / ($columns / $i) * 1%;
+    }
+  }
+}
+
+//  Medium Offset
+@media screen and (min-width: $break-small) and (max-width: $break-large) {
+  @for $i from 1 through $columns {
+    .medium-offset-#{$i} {
+      margin-left: 100 / ($columns / $i) * 1%;
+    }
+  }
+}
+
+//  Small Offset
+@media screen and (max-width: $break-small) {
+  @for $i from 1 through $columns {
+    .small-offset-#{$i} {
+      margin-left: 100 / ($columns / $i) * 1%;
+    }
+  }
+}
+
+//  5. Miscellaneous
+//  ---------------
+
+//  Apply a gutter when the device width
+//  is less than the container width so that
+//  content is not touching the edges of the device
+@media all and (max-width: $site-width) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.ie {
+  //  Stops IE 7/8 from being responsive as it doesn't
+  //  support media queries.
+  .container {
+    width: $site-width;
+  }
+  //  IE 7/8 Offset. No additional classes need
+  //  to be applied to the markup, as the .ie class
+  //  will ensure this always works on IE 7/8
+  @for $i from 1 through $columns {
+    .large-offset-#{$i} {
+      margin-left: 100 / ($columns / $i) * 1%;
+    }
+  }
+}
+
+hr {
+  background: $pale-grey;
+  border: 0;
+  height: 1px;
+}
+
+@media all and (max-width: $break-small) {
+  
+  hr {
+    margin: 0 -10px;
+  }
+}
+
+//  6. Margin Helper Classes
+//  ------------------------
+//  Provides a number of margin options for top/bottom
+//  for each margin in the $margins array list.
+//
+//  mt(num) = margin top only
+//  mb(num) = margin bottom only
+//  ml(num) = margin left only
+//  mr(num) = margin right only
+//  mbt(num) = margin top and bottom
+
+$margins: 0 10 20 40 60;
+
+@each $margin in $margins {
+  .mb#{$margin} {
+    margin-bottom: $margin * 1px;
+  }
+}
+
+@each $margin in $margins {
+  .mt#{$margin} {
+    margin-top: $margin * 1px;
+  }
+}
+
+@each $margin in $margins {
+  .ml#{$margin} {
+    margin-left: $margin * 1px;
+  }
+}
+
+@each $margin in $margins {
+  .mr#{$margin} {
+    margin-right: $margin * 1px;
+  }
+}
+
+@each $margin in $margins {
+  .mbt#{$margin} {
+    margin-bottom: $margin * 1px;
+    margin-top: $margin * 1px;
+  }
+}
+
+@media all and (max-width: $break-large) {
+  @each $margin in $margins {
+    .mbm#{$margin} {
+      margin-bottom: $margin * 1px;
+    }
+  }
+
+  @each $margin in $margins {
+    .mtm#{$margin} {
+      margin-top: $margin * 1px;
+    }
+  }
+}
+
+@media all and (max-width: $break-small) {
+  @each $margin in $margins {
+    .mbm#{$margin} {
+      margin-bottom: $margin * 1px;
+    }
+  }
+
+  @each $margin in $margins {
+    .mtm#{$margin} {
+      margin-top: $margin * 1px;
+    }
+  }
+}
+
+
+//  7. Padding Helper Classes
+//  ------------------------
+//  Provides a number of padding options for top/bottom/left/right
+//  for each padding in the $paddings array list.
+//
+//  pt(num) = padding top only
+//  pb(num) = padding bottom only
+//  pl(num) = padding bottom only
+//  pr(num) = padding bottom only
+//  pbt(num) = padding top and bottom
+//  plr(num) = padding top and bottom
+//  p(num) = padding
+
+$paddings: 0 10 20 30 40 60;
+
+@each $padding in $paddings {
+  .pb#{$padding} {
+    padding-bottom: $padding * 1px;
+  }
+}
+
+@each $padding in $paddings {
+  .pt#{$padding} {
+    padding-top: $padding * 1px;
+  }
+}
+
+@each $padding in $paddings {
+  .pbt#{$padding} {
+    padding-bottom: $padding * 1px;
+    padding-top: $padding * 1px;
+  }
+}
+
+@each $padding in $paddings {
+  .pl#{$padding} {
+    padding-left: $padding * 1px;
+  }
+}
+
+@each $padding in $paddings {
+  .pr#{$padding} {
+    padding-right: $padding * 1px;
+  }
+}
+
+@each $padding in $paddings {
+  .plr#{$padding} {
+    padding-left: $padding * 1px;
+    padding-right: $padding * 1px;
+  }
+}
+
+@each $padding in $paddings {
+  .p#{$padding} {
+    padding-bottom: $padding * 1px;
+    padding-left: $padding * 1px;
+    padding-right: $padding * 1px;
+    padding-top: $padding * 1px;
+  }
+}
