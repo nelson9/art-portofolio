@@ -747,6 +747,12 @@ body {
   color: black;
   font-size: 100%; }
 
+h1 {
+  font-family: LibreFranklin-SemiBold;
+  font-size: 27px;
+  color: #302C3B;
+  line-height: 33px; }
+
 .hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -760,3 +766,30 @@ body {
 .hide {
   display: none;
   visibility: hidden; }
+
+.large-1 {
+  background: grey; }
+
+h1 {
+  font-family: LibreFranklin-SemiBold;
+  font-size: 27px;
+  color: #302C3B;
+  line-height: 33px; }
+
+a {
+  font-family: LibreFranklin-Medium;
+  font-size: 17px;
+  color: #302C3B;
+  line-height: 20px;
+  text-decoration: none;
+  padding-left: 40px;
+  position: absolute;
+  bottom: 0px; }
+
+.navigation {
+  height: 80px;
+  border-right: 0px; }
+
+.header-top {
+  background: black;
+  height: 20px; }
