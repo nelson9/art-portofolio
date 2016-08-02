@@ -776,15 +776,17 @@ nav ul {
   height: 45px;
   padding: 0;
   overflow: hidden;
-  float: right; }
+  float: right;
+  padding-top: 40px; }
 
 nav li {
   float: left;
   display: block; }
 
 .nav-bar {
-  height: 80px;
-  margin-top: 15px; }
+  height: 110px;
+  margin-top: 15px;
+  border-bottom: 1px lightslategrey; }
 
 nav li a {
   font-family: 'Libre Franklin', sans-serif;
@@ -797,7 +799,7 @@ nav li a {
   padding-left: 46px;
   display: inline-block; }
 
-ul.topnav li.icon {
+ul.topnav li.nav-icon1 {
   display: none; }
 
 @media screen and (max-width: 1035px) {
@@ -811,13 +813,13 @@ ul.topnav li.icon {
 @media screen and (max-width: 640px) {
   ul.topnav li {
     display: none; }
-  ul.topnav li.icon {
+  ul.topnav li.nav-icon1 {
     display: inline-block; } }
 
 @media screen and (max-width: 640px) {
   ul.topnav.responsive {
     position: relative; }
-  ul.topnav.responsive li.icon {
+  ul.topnav.responsive li.nav-icon1 {
     position: absolute;
     right: 0;
     top: 0; }

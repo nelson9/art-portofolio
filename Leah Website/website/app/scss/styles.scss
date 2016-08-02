@@ -28,6 +28,7 @@ nav ul{
     padding: 0;
     overflow: hidden;
     float: right;
+    padding-top: 40px
 }
 
 nav li{
@@ -36,13 +37,12 @@ nav li{
 }
 
 .nav-bar{
-	height:80px;
+	height:110px;
   margin-top: 15px;
-
+  border-bottom: 1px lightslategrey;
 }
 
-nav li a {
-   
+nav li a {   
   font-family: 'Libre Franklin', sans-serif;
   @include font-size(18px);
   font-weight: 400;
@@ -52,7 +52,8 @@ nav li a {
   padding-left: 46px;
   display: inline-block;
 }
-ul.topnav li.icon {display: none;}
+
+ul.topnav li.nav-icon1 {display: none;}
 
 @media screen and (max-width: 1035px) {
  body .nav-links{
@@ -61,7 +62,6 @@ ul.topnav li.icon {display: none;}
 }
 
 @media screen and (max-width: 760px) { 
-
   nav li a{
     padding-left:22px !important ; 
   }
@@ -69,14 +69,14 @@ ul.topnav li.icon {display: none;}
 
 @media screen and (max-width:640px) {
   ul.topnav li {display: none;}
-  ul.topnav li.icon {
+  ul.topnav li.nav-icon1 {
     display: inline-block;
   }
 }
 
 @media screen and (max-width:640px) {
   ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
+  ul.topnav.responsive li.nav-icon1 {
     position: absolute;
     right: 0;
     top: 0;
@@ -89,8 +89,6 @@ ul.topnav li.icon {display: none;}
     text-align: left;
   }
 }
-  
-
 
 .nav-links{
   border-right:0px;  
