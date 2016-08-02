@@ -19,19 +19,24 @@
 body { 
   color: black;
   font-size: 100%;
+
+}
+
+p{
+  font-family: 'Libre Franklin', sans-serif;  
+  @include font-size(18px);
+  color: #4A4A4A;
+  line-height: 39.2px;  
 }
 
 h1 a{
   @include font-size(27px);
   font-family: 'Libre Franklin', sans-serif;  
-  color: #302C3B;
+  color: #302C3B; 
   line-height: 33px;
-  font-weight: 600;   
+  font-weight: 600;    
   text-decoration: none;
 }
-
- 
-
 
 // only visibile on screen readers
 .hidden {

@@ -19,7 +19,6 @@
 @import '_base/typography';
 
 
-
 //navigation
 
 nav ul{
@@ -39,7 +38,7 @@ nav li{
 .nav-bar{
 	height:110px;
   margin-top: 15px;
-  border-bottom: 1px lightslategrey;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 nav li a {   
@@ -49,11 +48,17 @@ nav li a {
   color: #302C3B;
   line-height: 20px;
   text-decoration: none; 
-  padding-left: 46px;
+  padding-left: 36px;
+  margin-left:10px;
   display: inline-block;
 }
 
-ul.topnav li.nav-icon1 {display: none;}
+nav li a:hover {   
+  border-bottom:4px solid black;
+  padding-bottom:4px;
+}
+
+ul.topnav li.nav-icon {display: none;}
 
 @media screen and (max-width: 1035px) {
  body .nav-links{
@@ -63,20 +68,20 @@ ul.topnav li.nav-icon1 {display: none;}
 
 @media screen and (max-width: 760px) { 
   nav li a{
-    padding-left:22px !important ; 
+    padding-left:22px ; 
   }
 }
 
 @media screen and (max-width:640px) {
   ul.topnav li {display: none;}
-  ul.topnav li.nav-icon1 {
+  ul.topnav li.nav-icon {
     display: inline-block;
-  }
+  } 
 }
 
 @media screen and (max-width:640px) {
   ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.nav-icon1 {
+  ul.topnav.responsive li.nav-icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -97,4 +102,40 @@ ul.topnav li.nav-icon1 {display: none;}
 .header-top{
 	background: black;
 	height: 20px; 
+}
+
+
+//foooter
+
+
+footer {
+  margin-top: 30px;
+  height: 80px;
+}
+footer a {
+  margin-left: 0px;
+}
+footer img{
+  padding-right:  3px;
+}
+
+//main
+main{
+  min-height: 500px;
+  padding-top: 40px;
+}
+
+
+.back-left{
+  background-image: url('../img/left_main.png'),url('../img/right_main.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, top right;
+  height: 800px;
+}
+
+.home-page{
+
+  padding: 10px 20px 10px 80px;
+opacity: 0.74;
+background: #FFFFFF;
 }

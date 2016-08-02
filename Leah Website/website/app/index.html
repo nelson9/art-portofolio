@@ -1,57 +1,80 @@
 ﻿<!DOCTYPE html>
-<!--[if IE 7]><html class="ie"><![endif]-->
-<!--[if IE 8]><html class="ie"><![endif]-->
-<!--[if gt IE 9]><!-->
-<!--<![endif]-->
-<html>
-<head>
-    <title>Leah Miller-Biot</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if IE 7]>
+<html class="ie">
+   <![endif]-->
+   <!--[if IE 8]>
+   <html class="ie">
+      <![endif]-->
+      <!--[if gt IE 9]><!-->
+      <!--<![endif]-->
+      <html>
+         <head>
+            <title>Leah Miller-Biot</title>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="css/styles.css" rel="stylesheet" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script>
+               $(document).ready(function () {
+                   $('.nav-icon').click(function () {
+                       $('#myTopnav').toggleClass('responsive');
+                   });
+               });
+            </script>
+         </head>
+         <body>
+            <div class="container">
+               <!--header start-->
+               <header>
+                  <nav>
+                     <div class="row">
+                        <div class="large-7 large-offset-5 medium-7 medium-offset-5 small-6 small-offset-6 header-top"></div>
+                     </div>
+                     <div class="row">
+                        <div class="nav-bar">
+                           <div class="large-5 medium-3 small-8">
+                              <h1><a href='#'>Leah <br>Miller-Biot</a></h1>
+                           </div>
+                           <div class="large-7 medium-9 small-4 nav-links">
+                              <ul class="topnav" id="myTopnav">
+                                 <li><a href='#'>Projects</a></li>
+                                 <li><a href='#'>Selected Works</a></li>
+                                 <li><a href='#'>CV</a></li>
+                                 <li><a href='mailto:webmaster@example.com'>Contact</a></li>
+                                 <li class="nav-icon"><a href="#">&#9776;</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+               </header>
+               <main>
+                 <row>
+                     <div class="back-left">
+                     <div class="large-7">
+                        <p class="home-page">
+                           Born in Norwich in 1985 to Belgian and English parents, Leah Miller-Biot spent her formative years in the North and North Eastern regions of Brazil. A graduate of both the Slade School of Art and Glasgow School of Art, her work is heavily informed by the experience of growing up between numerous cultures, which can be seen in the multiplicity of forms, colours, crafts and textures she employs in her work.  Her strong allegiance to the tradition of still-life painting, allows her to explore the manifestations of an identity in constant flux through the objects and materials that form a part of her life. Recent shows include Studio- 41 Glasgow, Casa da Arte, Sao-Luis Brazil and as part of In the House a series of open house exhibitions in London.
+                        </p>
+                     </div>
+                     <div class="large-5"></div>
+                        </div>
+                  </row>
+               </main>
+             
+               <!--footer start-->
+                 <row class="large-12 medium-12 small-12">
+                      <footer>
+                           
+                    <div class="large-5 medium-5 small-8">
+                        <a href='mailto:webmaster@example.com'><img src="img/mail.svg"/></a>
+                        <a href='http://facebook.com'><img src="img/facebook.svg"/></a>
+                        <a href='http://twitter.com'><img src="img/twitter.svg"/></a>                  
+                     </div>
+                                
 
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.icon').click(function () {
-                $(this).toggleClass('open');
-                $('#myTopnav').toggleClass('responsive');
-            });
-        });
-    </script>
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <div class="row">
-                <div class="large-7 large-offset-5 medium-7 medium-offset-5 small-6 small-offset-6 header-top"></div>
+                      </footer>
+                    
+                  </row>
             </div>
-            <nav>
-                <div class="row">
-                    <div class="nav-bar">
-                        <div class="large-5 medium-3 small-8">
-                            <h1><a href='#'>Leah <br>Miller-Biot</a></h1>
-                        </div>
-                        <div class="large-7 medium-9 small-4 nav-links">
-                            <ul class="topnav" id="myTopnav">
-                                <li><a href='#'>Projects</a></li>
-                                <li><a href='#'>Selected Works</a></li>
-                                <li><a href='#'>CV</a></li>
-                                <li><a href='#'>Contact</a></li>
-                                <li class="icon">
-                                    <div id="nav-icon1">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    </div>
-</body>
-</html>
+         </body>
+      </html>
