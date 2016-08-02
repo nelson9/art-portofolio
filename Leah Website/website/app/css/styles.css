@@ -778,6 +778,16 @@ h1 a {
   display: none;
   visibility: hidden; }
 
+html body {
+  background-image: url("../img/asdf.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 nav ul {
   list-style-type: none;
   height: 45px;
@@ -790,11 +800,6 @@ nav li {
   float: left;
   display: block; }
 
-.nav-bar {
-  height: 110px;
-  margin-top: 15px;
-  border-bottom: 1px solid #E5E5E5; }
-
 nav li a {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 18px;
@@ -806,6 +811,35 @@ nav li a {
   padding-left: 36px;
   margin-left: 10px;
   display: inline-block; }
+
+.nav-bar {
+  height: 110px;
+  margin-top: 15px;
+  border-bottom: 1px solid #E5E5E5; }
+
+.side-nav nav li a {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #302C3B;
+  line-height: 20px;
+  text-decoration: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  display: inline-block; }
+
+.side-nav nav ul {
+  list-style-type: none;
+  height: 145px;
+  overflow: hidden;
+  float: left;
+  padding-top: 0px; }
+
+.side-nav nav li {
+  float: none;
+  display: block;
+  padding-bottom: 30px; }
 
 nav li a:hover {
   border-bottom: 4px solid black;
@@ -862,13 +896,10 @@ main {
   min-height: 500px;
   padding-top: 40px; }
 
-.back-left {
-  background-image: url("../img/left_main.png"), url("../img/right_main.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left bottom, top right;
+.home-back {
   height: 800px; }
 
 .home-page {
-  padding: 10px 20px 10px 80px;
+  padding: 10px 20px 40px 80px;
   opacity: 0.74;
   background: #FFFFFF; }
