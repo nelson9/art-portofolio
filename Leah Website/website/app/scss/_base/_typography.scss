@@ -31,16 +31,7 @@ h1 a{
 }
 
  
-nav li a {
-   
-  font-family: 'Libre Franklin', sans-serif;
-  @include font-size(18px);
-  font-weight: 400;
-  color: #302C3B;
-  line-height: 20px;
-  text-decoration: none; 
-  padding: 0 0 0 46px;
-}
+
 
 // only visibile on screen readers
 .hidden {

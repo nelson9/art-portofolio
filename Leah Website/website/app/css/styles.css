@@ -757,16 +757,6 @@ h1 a {
   font-weight: 600;
   text-decoration: none; }
 
-nav li a {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #302C3B;
-  line-height: 20px;
-  text-decoration: none;
-  padding: 0 0 0 46px; }
-
 .hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -796,7 +786,48 @@ nav li {
   height: 80px;
   margin-top: 15px; }
 
-.no-border-right {
+nav li a {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #302C3B;
+  line-height: 20px;
+  text-decoration: none;
+  padding-left: 46px;
+  display: inline-block; }
+
+ul.topnav li.icon {
+  display: none; }
+
+@media screen and (max-width: 1035px) {
+  body .nav-links {
+    border-right: 10px solid transparent; } }
+
+@media screen and (max-width: 760px) {
+  nav li a {
+    padding-left: 22px !important; } }
+
+@media screen and (max-width: 640px) {
+  ul.topnav li {
+    display: none; }
+  ul.topnav li.icon {
+    display: inline-block; } }
+
+@media screen and (max-width: 640px) {
+  ul.topnav.responsive {
+    position: relative; }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  ul.topnav.responsive li {
+    display: inline; }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left; } }
+
+.nav-links {
   border-right: 0px; }
 
 .header-top {

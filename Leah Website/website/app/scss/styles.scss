@@ -38,14 +38,65 @@ nav li{
 .nav-bar{
 	height:80px;
   margin-top: 15px;
+
 }
 
-.no-border-right{
-  border-right:0px;
+nav li a {
+   
+  font-family: 'Libre Franklin', sans-serif;
+  @include font-size(18px);
+  font-weight: 400;
+  color: #302C3B;
+  line-height: 20px;
+  text-decoration: none; 
+  padding-left: 46px;
+  display: inline-block;
 }
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width: 1035px) {
+ body .nav-links{
+    border-right: 10px solid transparent;
+  }
+}
+
+@media screen and (max-width: 760px) { 
+
+  nav li a{
+    padding-left:22px !important ; 
+  }
+}
+
+@media screen and (max-width:640px) {
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:640px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li { 
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+  
+
+
+.nav-links{
+  border-right:0px;  
+} 
 
 .header-top{
 	background: black;
-	height: 20px 
- 
+	height: 20px; 
 }

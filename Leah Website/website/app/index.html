@@ -4,38 +4,48 @@
 <!--[if gt IE 9]><!-->
 <!--<![endif]-->
 <html>
-    <head>
-        <title>Leah Miller-Biot</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
+<head>
+    <title>Leah Miller-Biot</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" />
+    <script>
+        function mobileMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += "responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
 
-    <body>
-        <div class="container">
-            <header>
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="large-7 large-offset-5 medium-7 medium-offset-5 small-6 small-offset-6 header-top"></div>
+            </div>
+            <nav>
                 <div class="row">
-                    <div class="large-7 large-offset-5 header-top"></div>
-                </div>
-                      <nav>
-                <div class="row">
-            <div class="nav-bar">
-                    <div class="large-3 small-12">
-                        <h1><a href='#'>Leah <br>Miller-Biot</a></h1>
+                    <div class="nav-bar">
+                        <div class="large-5 medium-3 small-8">
+                            <h1><a href='#'>Leah <br>Miller-Biot</a></h1>
+                        </div>
+                        <div class="large-7 medium-9 small-4 nav-links">
+                            <ul class="topnav" id="myTopnav">
+                                <li><a href='#'>Projects</a></li>
+                                <li><a href='#'>Selected Works</a></li>
+                                <li><a href='#'>CV</a></li>
+                                <li><a href='#'>Contact</a></li>
+                                <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="mobileMenu()">☰</a></li>
+                            </ul>
+                        </div>
                     </div>
-              
-                    <div class="large-6 large-offset-3 small-12 no-border-right">
-                        <ul>
-                            <li><a href='#'>Projects</a></li>
-                            <li><a href='#'>Selected Works</a></li>
-                            <li><a href='#'>CV</a></li>
-                            <li><a href='#'>Contact</a></li>
-                        </ul>
-                    </div>
-                  </div>
                 </div>
-              </nav>
-            </header>
-        </div>
-    </body>
+            </nav>
+        </header>
+    </div>
+</body>
 </html>
