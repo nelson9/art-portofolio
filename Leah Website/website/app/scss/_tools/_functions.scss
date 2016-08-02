@@ -1,23 +1,4 @@
-﻿//
-//  Macmillan Community SASS Functions
-//  ----------------------------------
-//
-//  This file includes any SASS functions that are
-//  utilised throughout the community website
-//
-//    1. Font-Size - Pixel to EM conversion
-
-//  Pixel to EM Conversion
-//  ----------------------
-//  This function will take any pixel value and
-//  convert it to the equivalent EM value.
-//
-//  @Params
-//  $px - Pixel size to convert (e.g. 14px)
-//  $base - Website base font-size as set in _variables.scss
-//
-//  @Example Usage
-//  font-size: em(14px)
+﻿
 //
 @function rem($px) {
   $rem: $px / 16px;

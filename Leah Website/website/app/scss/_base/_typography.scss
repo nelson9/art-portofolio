@@ -16,30 +16,30 @@
 //
 //
 
-body {
- 
+body { 
   color: black;
   font-size: 100%;
 }
 
-a {
-
-}
-
-h1{
-
-  font-family: LibreFranklin-SemiBold;
-  font-size: 27px;
+h1 a{
+  @include font-size(27px);
+  font-family: 'Libre Franklin', sans-serif;  
   color: #302C3B;
   line-height: 33px;
+  font-weight: 600;   
+  text-decoration: none;
 }
 
-h2{
-
-}
-
-h3{
-
+ 
+nav li a {
+   
+  font-family: 'Libre Franklin', sans-serif;
+  @include font-size(18px);
+  font-weight: 400;
+  color: #302C3B;
+  line-height: 20px;
+  text-decoration: none; 
+  padding: 0 0 0 46px;
 }
 
 // only visibile on screen readers

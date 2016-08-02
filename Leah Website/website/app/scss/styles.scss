@@ -18,45 +18,34 @@
 @import '_base/grid';
 @import '_base/typography';
 
-.large-1{
-	background: grey; 
+
+
+//navigation
+
+nav ul{
+    list-style-type: none;
+    height: 45px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
 }
 
-
-
-//typography
-
-h1{
-
-  font-family: LibreFranklin-SemiBold;
-  font-size: 27px;
-  color: #302C3B;
-  line-height: 33px;
+nav li{
+  float: left;
+  display: block;
 }
 
-
-a{
-
-font-family: LibreFranklin-Medium;
-font-size: 17px;
-color: #302C3B;
-line-height: 20px;
-text-decoration: none;
-padding-left:40px;
-
-position: absolute;
-	bottom: 0px;
-
-}
-
-.navigation{
+.nav-bar{
 	height:80px;
+  margin-top: 15px;
+}
 
-    border-right:0px;
+.no-border-right{
+  border-right:0px;
 }
 
 .header-top{
 	background: black;
-	height: 20px
-
+	height: 20px 
+ 
 }

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,400italic);
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -747,11 +748,24 @@ body {
   color: black;
   font-size: 100%; }
 
-h1 {
-  font-family: LibreFranklin-SemiBold;
+h1 a {
   font-size: 27px;
+  font-size: 1.6875rem;
+  font-family: 'Libre Franklin', sans-serif;
   color: #302C3B;
-  line-height: 33px; }
+  line-height: 33px;
+  font-weight: 600;
+  text-decoration: none; }
+
+nav li a {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #302C3B;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 0 0 0 46px; }
 
 .hidden {
   border: 0;
@@ -767,27 +781,22 @@ h1 {
   display: none;
   visibility: hidden; }
 
-.large-1 {
-  background: grey; }
+nav ul {
+  list-style-type: none;
+  height: 45px;
+  padding: 0;
+  overflow: hidden;
+  float: right; }
 
-h1 {
-  font-family: LibreFranklin-SemiBold;
-  font-size: 27px;
-  color: #302C3B;
-  line-height: 33px; }
+nav li {
+  float: left;
+  display: block; }
 
-a {
-  font-family: LibreFranklin-Medium;
-  font-size: 17px;
-  color: #302C3B;
-  line-height: 20px;
-  text-decoration: none;
-  padding-left: 40px;
-  position: absolute;
-  bottom: 0px; }
-
-.navigation {
+.nav-bar {
   height: 80px;
+  margin-top: 15px; }
+
+.no-border-right {
   border-right: 0px; }
 
 .header-top {
