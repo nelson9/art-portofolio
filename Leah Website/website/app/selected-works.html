@@ -19,6 +19,19 @@
                    $('.nav-icon').click(function () {
                        $('#myTopnav').toggleClass('responsive');
                    });
+
+                   $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
                });
             </script>
          </head>
@@ -56,35 +69,54 @@
                               <ul>
                                  <li><a href='#'>2017</a></li>
                                  <li><a href='#'>2016</a></li>
-                                 <li><a href='#'>2015</a></li>
+                                 <li><a href='#2015'>2015</a></li>
                               </ul>
                            </nav>
                         </div>
                      </div>
                      <div class="large-10 main-content">
-                         <div class="row"> 
-                             <div class="artwork">
-                             <img src="img/artwork1.png"/>
-                             <div class="artwork-detail">
-<h1>Title</h1>
-<p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
-                                 
-                             </div>
-                         </div>
+                         <div class="year">                        </div>
 
-                             </div>
-                                  <div class="row"> 
-                             <div class="artwork">
-                             <img src="img/artwork2.png"/>
-                             <div class="artwork-detail">
-<h1>Title</h1>
-<p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
-                                 
-                             </div>
-                         </div>
+                        <div class="row">
+                           <div class="artwork">
+                              <img src="img/artwork1.png"/>
+                              <div class="artwork-detail">
+                                 <h1>Title</h1>
+                                 <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="artwork">
+                              <img src="img/artwork2.png"/>
+                              <div class="artwork-detail">
+                                 <h1>Title</h1>
+                                 <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+                              </div>
+                           </div>
+                        </div>
+                                                 <div class="year">
+<h2 id="2015">2015</h2>
+                                                 </div>
 
-                             </div>
-                        
+                        <div class="row">
+                           <div class="artwork">
+                              <img src="img/So-so.jpg"/>
+                              <div class="artwork-detail">
+                                 <h1>Title</h1>
+                                 <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="artwork">
+                              <img src="img/A-firm-grip.jpg"/>
+                              <div class="artwork-detail">
+                                 <h1>Title</h1>
+                                 <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </main>
