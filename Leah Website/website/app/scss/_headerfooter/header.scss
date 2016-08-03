@@ -1,0 +1,135 @@
+
+//navigation
+
+nav ul{
+    list-style-type: none;
+    height: 45px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    padding-top: 40px
+}
+
+nav li{
+  float: left;
+  display: block;
+}
+
+nav li a {   
+  font-family: 'Libre Franklin', sans-serif;
+  @include font-size(18px);
+  font-weight: 400;
+  color: #302C3B;
+  line-height: 20px;
+  text-decoration: none; 
+  padding-left: 36px;
+  margin-left:10px;
+  display: inline-block;
+}
+
+.nav-bar{
+	height:105px;
+  margin-top: 15px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.side-nav nav li a {
+
+ font-family: 'Libre Franklin', sans-serif;
+  @include font-size(18px);
+  font-weight: 400;
+  color: #302C3B;
+  line-height: 20px;
+  text-decoration: none; 
+  padding-left: 0px;
+  
+  margin-left:0px;
+  display: inline-block;
+}
+
+.side-nav nav ul{
+   list-style-type: none;
+    height: 145px;  
+    overflow: hidden;
+    float: left;
+padding-top: 0px;
+}
+
+.side-nav nav li{
+ float: none;
+  display: block;
+    padding-bottom: 30px;
+    height: 15px; 
+}
+
+
+nav li a:hover {   
+  border-bottom:4px solid black;
+  padding-bottom:4px;
+}
+
+ul.topnav li.nav-icon {
+  display: none;
+  margin-top: -20px;
+  
+  
+  }
+nav li.nav-icon a:hover 
+{
+
+  border: 0;
+  
+}
+
+
+
+.nav-icon img{
+  width: 150%;
+  height: 150%;
+
+}
+
+@media screen and (max-width: 1035px) {
+ body .nav-links{
+    border-right: 10px solid transparent;
+  }
+}
+
+@media screen and (max-width: 760px) { 
+  nav li a{
+    padding-left:22px ; 
+  }
+}
+
+@media screen and (max-width:640px) {
+  ul.topnav li {display: none;}
+  ul.topnav li.nav-icon {
+    display: inline-block;
+      margin-right: 14px;
+  } 
+}
+
+@media screen and (max-width:640px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.nav-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li { 
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.nav-links{
+  border-right:0px;  
+} 
+
+.header-top{
+	background: black;
+	height: 20px; 
+}

@@ -1,7 +1,4 @@
-﻿ //  1. Base Styles
-//
-
-//
+﻿//
 //  Tools
 //  -----
 @import '_tools/variables';
@@ -18,10 +15,15 @@
 @import '_base/grid';
 @import '_base/typography';
 
+//
+//  Header and footers
+//  ------------------
+@import '_headerfooter/header';
+@import '_headerfooter/footer';
 
-//navigation
-html body{
-  background-image: url('../img/home.jpg') ;
+
+.home-content{
+  background-image: url('../img/asdf.png') ;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -29,163 +31,7 @@ html body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.header-container{
- // background-color: rgba(#FFFFFF, 0.6)
-}
-nav ul{
-    list-style-type: none;
-    height: 45px;
-    padding: 0;
-    overflow: hidden;
-    float: right;
-    padding-top: 40px
-}
-
-nav li{
-  float: left;
-  display: block;
-}
-
-nav li a {   
-  font-family: 'Libre Franklin', sans-serif;
-  @include font-size(18px);
-  font-weight: 400;
-  color: #302C3B;
-  line-height: 20px;
-  text-decoration: none; 
-  padding-left: 36px;
-  margin-left:10px;
-  display: inline-block;
-}
-
-.nav-bar{
-	height:105px;
-  margin-top: 15px;
-  border-bottom: 1px solid #E5E5E5;
-}
-
- .side-nav nav li a {
-
- font-family: 'Libre Franklin', sans-serif;
-  @include font-size(18px);
-  font-weight: 400;
-  color: #302C3B;
-  line-height: 20px;
-  text-decoration: none; 
-  padding-left: 0px;
-  
-  margin-left:0px;
-  display: inline-block;
-}
-
-.side-nav nav ul{
-   list-style-type: none;
-    height: 145px;  
-    overflow: hidden;
-    float: left;
-padding-top: 0px;
-}
-
-.side-nav nav li{
- float: none;
-  display: block;
-    padding-bottom: 30px;
-}
-
-
-nav li a:hover {   
-  border-bottom:4px solid black;
-  padding-bottom:4px;
-}
-
-ul.topnav li.nav-icon {
-  display: none;
-  margin-top: -20px;
-  
-  
-  }
-nav li.nav-icon a:hover 
-{
-
-  border: 0;
-  
-}
-
-
-
-.nav-icon img{
-  width: 150%;
-  height: 150%;
-
-}
-
-@media screen and (max-width: 1035px) {
- body .nav-links{
-    border-right: 10px solid transparent;
-  }
-}
-
-@media screen and (max-width: 760px) { 
-  nav li a{
-    padding-left:22px ; 
-  }
-}
-
-@media screen and (max-width:640px) {
-  ul.topnav li {display: none;}
-  ul.topnav li.nav-icon {
-    display: inline-block;
-      margin-right: 14px;
-  } 
-}
-
-@media screen and (max-width:640px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.nav-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li { 
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
-
-.nav-links{
-  border-right:0px;  
-} 
-
-.header-top{
-	background: black;
-	height: 20px; 
-}
-
-
-//foooter
-
-.footer-container{
-  background-color: rgba(#FFFFFF, 0.25);
-}
-
-footer {
-  margin-top: 30px;
-  height: 80px;
-   position:fixed;
-bottom: 0px;
-width:100%;
-  
-}
-footer a {
-  margin-left: 0px;
-}
-footer img{
-  padding-right:  3px;
+  height: 1000px;
 }
 
 //main
@@ -194,18 +40,50 @@ main{
   padding-top: 40px;
 }
 
+.main-content{
+    border-left: 1px solid #E5E5E5;
+    padding:45px 0px 80px 30px;  
+        margin-top: -65px;
 
-.home-back{
-  // background-image: url('../img/left_main.png'),url('../img/right_main.png');
-  // background-repeat: no-repeat, no-repeat;
-  // background-position: left bottom, top right;
-  height: 800px;
+}
+
+.artwork img{
+float: left;
+margin-right: 20px;
+padding-bottom: 10px;
+max-width: 825px;
+}
+
+.artwork {
+  padding: 0px 0px 30px 105px;
+  border-bottom: 1px solid #E5E5E5;
   
+width:100%;
+display: inline-block;
+margin:20px 0px 0px -85px;
+
 }
 
-.home-page{
+.artwork-detail {
+  width:180px;
+  float: left;
 
-padding: 10px 20px 40px 80px;
-opacity: 0.74;
-background: #FFFFFF;
 }
+.artwork-detail  p{
+
+font-family: LibreFranklin-Medium;
+font-size: 12px;
+color: #000000;
+line-height: 25px;
+
+
+}
+
+.artwork-detail  h1 {
+font-family: LibreFranklin-Medium;
+font-size: 12px;
+color: #000000;
+line-height: 25px;
+text-transform: uppercase;
+ }
+
