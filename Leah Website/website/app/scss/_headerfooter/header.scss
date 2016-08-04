@@ -51,26 +51,27 @@ nav li a {
   color: #302C3B;
   line-height: 20px;
   text-decoration: none; 
-  padding-left: 0px;
-  
+  padding-left: 0px;  
   margin-left:0px;
+  margin-right: 10px;
   display: inline-block;
 }
 
 .side-nav nav ul{
-   list-style-type: none;
-    height: 145px;  
-    overflow: hidden;
+    list-style-type: none;
+    height: 100%;  
     float: left;
-padding-top: 0px;
-position: fixed;
+    padding-top: 0px;
+    // position: fixed;
 }
 
 .side-nav nav li{
- float: none;
-  display: block;
-    padding-bottom: 30px;
+    float: none;
+    display: block;
+    padding-bottom: 50px;
     height: 15px; 
+    max-width: 145px;
+    margin-bottom: 20px;
 }
 
 

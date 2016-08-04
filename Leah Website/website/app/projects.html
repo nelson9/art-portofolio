@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie">
+   <![endif]-->
+<!--[if IE 8]>
+<html class="ie">
+   <![endif]-->
+<!--[if gt IE 9]><!-->
+<!--<![endif]-->
+<html>
+<head>
+    <title>Leah Miller-Biot</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav-icon').click(function () {
+                $('#myTopnav').toggleClass('responsive');
+            });
+
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!--header start-->
+        <header>
+            <nav>
+                <div class="row">
+                    <div class="large-7 large-offset-5 medium-7 medium-offset-5 small-6 small-offset-6 header-top"></div>
+                </div>
+                <div class="row">
+                    <div class="nav-bar">
+                        <div class="large-5 medium-3 small-8">
+                            <h1><a href='index.html'>Leah <br>Miller-Biot</a></h1>
+                        </div>
+                        <div class="large-7 medium-9 small-4 nav-links">
+                            <ul class="topnav" id="myTopnav">
+                                <li><a href='projects.html'>Projects</a></li>
+                                <li><a href='selected-works.html'>Selected Works</a></li>
+                                <li><a href='#'>CV</a></li>
+                                <li><a href='mailto:webmaster@example.com'>Contact</a></li>
+                                <li class="nav-icon"><a href="#"><img src="img/menu-icon.svg"</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="large-2">
+                    <div class="side-nav">
+                        <nav>
+                            <ul>
+                                <li><a href='#'>'I don' mobile phone drawings</a></li>
+                                <li><a href='#'>'OH' PSW Rum Factory</a></li>
+                                <li><a href='#'>Hiding Finding Place</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+  
+                <div class="large-10 small-12 main-content">
+                    <div class="row">
+                <section class="project">
+                    <h1>'I don' mobile phone drawings</h1>
+                    <p class="intro">
+                        'Hiding Finding place' took place for one night only in my eccentric family home – a traditional Victorian semi-detached town house, whose interior is embedded with the vestiges of an eclectic family history lived across the world. 
+                    </p>
+                    <img src="img/artwork3.jpg"/>
+                    <div class="img-description">
+                        <h1>Title</h1>
+<p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+  </div>
+<p>'Hiding Finding place' took place for one night only in my eccentric family home – a traditional Victorian semi-detached town house, whose interior is embedded with the vestiges of an eclectic family history lived across the world. We set ourselves the challenge of inserting our work into, under and over the existing tapestry of objects, and architecture, that make up the peculiar character of my house. It was a show where the artwork might get lost in the debris of family life, might coax out hidden ghosts, or where the display of the work might be a petulant, attention-seeking act.</p> 
+                  
+                                
+                </section>
+                </div>
+</div>
+
+            </div>
+        </main>
+        <!--footer start-->
+        <div class="row">
+            <footer>
+                <div class="large-5 medium-5 small-8">
+                    <a href='mailto:webmaster@example.com'><img src="img/mail.svg" /></a>
+                    <a href='http://facebook.com'><img src="img/facebook.svg" /></a>
+                    <a href='http://twitter.com'><img src="img/twitter.svg" /></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

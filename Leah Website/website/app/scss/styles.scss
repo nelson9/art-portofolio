@@ -88,7 +88,7 @@ text-transform: uppercase;
 
 .year h2{
   font-family: LibreFranklin-Medium;
-  margin:10px 5px 0px -65px;  
+  margin:10px 5px 0px -75px;  
   font-size: 16px;
   color: #000000;
   line-height: 25px;
@@ -98,3 +98,63 @@ text-transform: uppercase;
 .hidden{
   visibility: hidden;
 }
+
+
+
+section.project h1{
+font-family: LibreFranklin-SemiBold;
+font-size: 39px;
+color: #000000;
+line-height: 45px;
+margin: 30px 0px 65px 60px;
+}
+
+section.project .intro{
+  font-family: LibreFranklin-Regular;
+font-size: 18px;
+color: #4A4A4A;
+line-height: 35.2px;
+margin: 5px 0px 55px 60px;
+}
+
+section.project img{
+  margin: 10px 0px 10px 10px;
+  max-width: 100%;
+ float: right;
+}
+
+section.project .img-description p{
+  font-family: LibreFranklin-Medium;
+font-size: 12px;
+color: #000000;
+line-height: 25px;
+margin: 0px 0px 10px 10px;
+}
+
+section.project .img-description h1{
+  font-family: LibreFranklin-Medium;
+font-size: 12px;
+color: #000000;
+line-height: 25px; 
+margin: 0px 0px 0px 10px;
+text-transform: uppercase;
+}
+
+section.project .img-description{
+  margin-bottom:45px;
+}
+
+section.project .img-description p{
+font-family: LibreFranklin-Regular;
+font-size: 14px;
+color: #000000;
+line-height: 27px;
+}
+
+section.project p {
+font-family: LibreFranklin-Regular;
+font-size: 14px;
+color: #000000;
+line-height: 27px;
+margin: 20px 0px 20px 60px;
+} 

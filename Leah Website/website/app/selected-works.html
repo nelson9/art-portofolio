@@ -2,146 +2,143 @@
 <!--[if IE 7]>
 <html class="ie">
    <![endif]-->
-<!--[if IE 8]>
-<html class="ie">
-   <![endif]-->
-<!--[if gt IE 9]><!-->
-<!--<![endif]-->
-<html>
-<head>
-    <title>Leah Miller-Biot</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.nav-icon').click(function () {
-                $('#myTopnav').toggleClass('responsive');
-            });
-
-            $('a[href^="#"]').on('click', function (e) {
-                e.preventDefault();
-
-                var target = this.hash;
-                var $target = $(target);
-
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top
-                }, 900, 'swing', function () {
-                    window.location.hash = target;
-                });
-            });
-        });
-    </script>
-</head>
-<body>
-    <div class="container">
-        <!--header start-->
-        <header>
-            <nav>
-                <div class="row">
-                    <div class="large-7 large-offset-5 medium-7 medium-offset-5 small-6 small-offset-6 header-top"></div>
-                </div>
-                <div class="row">
-                    <div class="nav-bar">
-                        <div class="large-5 medium-3 small-8">
-                            <h1><a href='index.html'>Leah <br>Miller-Biot</a></h1>
+   <!--[if IE 8]>
+   <html class="ie">
+      <![endif]-->
+      <!--[if gt IE 9]><!-->
+      <!--<![endif]-->
+      <html>
+         <head>
+            <title>Leah Miller-Biot</title>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="css/styles.css" rel="stylesheet" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script>
+               $(document).ready(function () {
+                   $('.nav-icon').click(function () {
+                       $('#myTopnav').toggleClass('responsive');
+                   });
+               
+                   $('a[href^="#"]').on('click', function (e) {
+                       e.preventDefault();
+               
+                       var target = this.hash;
+                       var $target = $(target);
+               
+                       $('html, body').stop().animate({
+                           'scrollTop': $target.offset().top
+                       }, 900, 'swing', function () {
+                           window.location.hash = target;
+                       });
+                   });
+               });
+            </script>
+         </head>
+         <body>
+            <div class="container">
+               <!--header start-->
+               <header>
+                  <nav>
+                     <div class="row">
+                        <div class="large-7 large-offset-5 medium-7 medium-offset-5 small-6 small-offset-6 header-top"></div>
+                     </div>
+                     <div class="row">
+                        <div class="nav-bar">
+                           <div class="large-5 medium-3 small-8">
+                              <h1><a href='index.html'>Leah <br>Miller-Biot</a></h1>
+                           </div>
+                           <div class="large-7 medium-9 small-4 nav-links">
+                              <ul class="topnav" id="myTopnav">
+                                 <li><a href='projects.html'>Projects</a></li>
+                                 <li><a href='selected-works.html'>Selected Works</a></li>
+                                 <li><a href='#'>CV</a></li>
+                                 <li><a href='mailto:webmaster@example.com'>Contact</a></li>
+                                 <li class="nav-icon"><a href="#"><img src="img/menu-icon.svg"</a></li>
+                              </ul>
+                           </div>
                         </div>
-                        <div class="large-7 medium-9 small-4 nav-links">
-                            <ul class="topnav" id="myTopnav">
-                                <li><a href='#'>Projects</a></li>
-                                <li><a href='#'>Selected Works</a></li>
-                                <li><a href='#'>CV</a></li>
-                                <li><a href='mailto:webmaster@example.com'>Contact</a></li>
-                                <li class="nav-icon"><a href="#">&#9776;</a></li>
-                            </ul>
+                     </div>
+                  </nav>
+               </header>
+               <main>
+                  <div class="row">
+                     <div class="large-2">
+                        <div class="side-nav">
+                           <nav>
+                              <ul>
+                                 <li><a href='#2017'>2017</a></li>
+                                 <li><a href='#2016'>2016</a></li>
+                                 <li><a href='#2015'>2015</a></li>
+                              </ul>
+                           </nav>
                         </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="row">
-                <div class="large-2">
-                    <div class="side-nav">
-                        <nav>
-                            <ul>
-                                <li><a href='#2017'>2017</a></li>
-                                <li><a href='#2016'>2016</a></li>
-                                <li><a href='#2015'>2015</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="large-10 small-12 main-content">
-                    <div class="row ">
-                        <div class="year hidden">
-                            <h2 id="2017">2017</h2>
+                     </div>
+                     <div class="large-10 small-12 main-content">
+                        <div class="row">
+                           <div class="year hidden">
+                              <h2 id="2017">2017</h2>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="artwork">
-                            <img src="img/artwork1.png" />
-                            <div class="artwork-detail">
-                                <h1>Title</h1>
-                                <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
-                            </div>
+                        <div class="row">
+                           <div class="artwork">
+                              <img src="img/artwork1.png" />
+                              <div class="artwork-detail">
+                                 <h1>Title</h1>
+                                 <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="artwork">
-                            <img src="img/artwork2.png" />
-                            <div class="artwork-detail">
-                                <h1>Title</h1>
-                                <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
-                            </div>
+                        <div class="row">
+                           <div class="artwork">
+                              <img src="img/artwork2.png" />
+                              <div class="artwork-detail">
+                                 <h1>Title</h1>
+                                 <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="year">
-                            <h2 id="2016">2016</h2>
+                        <div class="row">
+                           <div class="year">
+                              <h2 id="2016">2016</h2>
+                           </div>
                         </div>
-
-
-                    </div>
-
-                    <div class="row">
-                        <div class="artwork">
-                            <img src="img/So-so.jpg" />
-                            <div class="artwork-detail">
-                                <h1>Title</h1>
-                                <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
-                            </div>
+                        <div class="row">
+                           <div class="artwork">
+                              <img src="img/So-so.jpg" />
+                              <div class="artwork-detail">
+                                 <h1>Title</h1>
+                                 <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="year">
-                            <h2 id="2015">2015</h2>
+                        <div class="row">
+                           <div class="year">
+                              <h2 id="2015">2015</h2>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="artwork">
-                            <img src="img/A-firm-grip.jpg" />
-                            <div class="artwork-detail">
-                                <h1>Title</h1>
-                                <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
-                            </div>
+                        <div class="row">
+                           <div class="artwork">
+                              <img src="img/A-firm-grip.jpg" />
+                              <div class="artwork-detail">
+                                 <h1>Title</h1>
+                                 <p>Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</p>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </main>
+               <!--footer start-->
+               <div class="row">
+                  <footer>
+                     <div class="large-5 medium-5 small-8">
+                        <a href='mailto:webmaster@example.com'><img src="img/mail.svg" /></a>
+                        <a href='http://facebook.com'><img src="img/facebook.svg" /></a>
+                        <a href='http://twitter.com'><img src="img/twitter.svg" /></a>
+                     </div>
+                  </footer>
+               </div>
             </div>
-        </main>
-        <!--footer start-->
-        <div class="row">
-            <footer>
-                <div class="large-5 medium-5 small-8">
-                    <a href='mailto:webmaster@example.com'><img src="img/mail.svg" /></a>
-                    <a href='http://facebook.com'><img src="img/facebook.svg" /></a>
-                    <a href='http://twitter.com'><img src="img/twitter.svg" /></a>
-                </div>
-            </footer>
-        </div>
-    </div>
-</body>
-</html>
+         </body>
+      </html>
