@@ -807,6 +807,13 @@ nav li a {
   margin-top: 15px;
   border-bottom: 1px solid #E5E5E5; }
 
+.side-nav {
+  min-height: 1px; }
+
+@media screen and (max-width: 640px) {
+  .side-nav {
+    display: none; } }
+
 .side-nav nav li a {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 18px;
@@ -824,7 +831,8 @@ nav li a {
   height: 145px;
   overflow: hidden;
   float: left;
-  padding-top: 0px; }
+  padding-top: 0px;
+  position: fixed; }
 
 .side-nav nav li {
   float: none;
@@ -832,16 +840,16 @@ nav li a {
   padding-bottom: 30px;
   height: 15px; }
 
-nav li a:hover {
+nav li a:hover, a:active {
   border-bottom: 4px solid black;
   padding-bottom: 4px; }
+
+nav li.nav-icon a:hover, a:active {
+  border: 0; }
 
 ul.topnav li.nav-icon {
   display: none;
   margin-top: -20px; }
-
-nav li.nav-icon a:hover {
-  border: 0; }
 
 .nav-icon img {
   width: 150%;
@@ -921,12 +929,12 @@ main {
 .artwork img {
   float: left;
   margin-right: 20px;
-  padding-bottom: 10px;
-  max-width: 825px; }
+  padding: 0px 10px 10px 0px;
+  max-width: 100%; }
 
 .artwork {
   padding: 0px 0px 30px 105px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 0.5px solid #E5E5E5;
   width: 100%;
   display: inline-block;
   margin: 20px 0px 0px -85px; }
@@ -947,3 +955,13 @@ main {
   color: #000000;
   line-height: 25px;
   text-transform: uppercase; }
+
+.year h2 {
+  font-family: LibreFranklin-Medium;
+  margin: 10px 5px 0px -65px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 25px; }
+
+.hidden {
+  visibility: hidden; }

@@ -33,6 +33,16 @@ nav li a {
   border-bottom: 1px solid #E5E5E5;
 }
 
+.side-nav{
+ min-height: 1px;
+}
+
+@media screen and (max-width:640px) {
+  .side-nav{
+    display: none;
+  } 
+}
+
 .side-nav nav li a {
 
  font-family: 'Libre Franklin', sans-serif;
@@ -53,6 +63,7 @@ nav li a {
     overflow: hidden;
     float: left;
 padding-top: 0px;
+position: fixed;
 }
 
 .side-nav nav li{
@@ -63,10 +74,15 @@ padding-top: 0px;
 }
 
 
-nav li a:hover {   
+nav li a:hover, a:active {   
   border-bottom:4px solid black;
   padding-bottom:4px;
 }
+nav li.nav-icon a:hover, a:active 
+{
+  border: 0;
+}
+
 
 ul.topnav li.nav-icon {
   display: none;
@@ -74,12 +90,7 @@ ul.topnav li.nav-icon {
   
   
   }
-nav li.nav-icon a:hover 
-{
 
-  border: 0;
-  
-}
 
 
 
