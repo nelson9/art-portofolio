@@ -3,8 +3,6 @@
 
 nav ul{
     list-style-type: none;
-    height: 45px;
-    padding: 0;
     overflow: hidden;
     float: right;
     padding-top: 40px
@@ -28,7 +26,7 @@ nav li a {
 }
 
 .nav-bar{
-	height:105px;
+	min-height:105px;
   margin-top: 15px;
   border-bottom: 1px solid #E5E5E5;
 }
@@ -51,9 +49,8 @@ nav li a {
   color: #302C3B;
   line-height: 20px;
   text-decoration: none; 
-  padding-left: 0px;  
+  padding:0px 0px 5px 0px;  
   margin-left:0px;
-  margin-right: 10px;
   display: inline-block;
 }
 
@@ -67,17 +64,22 @@ nav li a {
 
 .side-nav nav li{
     float: none;
-    display: block;
-    padding-bottom: 50px;
-    height: 15px; 
+    display: block;  
     max-width: 145px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
-nav li a:hover, a:active {   
+nav li a:hover, a:active, .active {   
   border-bottom:4px solid black;
-  padding-bottom:4px;
+  padding-bottom:4px; 
+  
+
+}
+nav li:hover, li:active, .active {   
+ margin-bottom: 27px; 
+  
+
 }
 nav li.nav-icon a:hover, a:active 
 {
@@ -122,14 +124,22 @@ ul.topnav li.nav-icon {
 }
 
 @media screen and (max-width:640px) {
-  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive {position: absolute;
+  margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+  
+  }
   ul.topnav.responsive li.nav-icon {
     position: absolute;
     right: 0;
     top: 0;
   }
   ul.topnav.responsive li { 
-    display: inline;
+    display: block;
+    margin-bottom: 20px;
+    float: none;
   }
   ul.topnav.responsive li a {
     display: block;
