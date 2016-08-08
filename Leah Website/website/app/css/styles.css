@@ -901,8 +901,6 @@ ul.topnav li.nav-icon {
 footer {
   margin-top: 30px;
   height: 80px;
-  position: fixed;
-  bottom: 0px;
   width: 100%; }
 
 footer a {
@@ -1023,3 +1021,9 @@ section.project p {
   color: #000000;
   line-height: 27px;
   margin: 20px 0px 20px 120px; }
+
+@media screen and (max-width: 640px) {
+  .artwork {
+    padding-left: 75px; }
+  .artwork img {
+    width: inherit; } }
