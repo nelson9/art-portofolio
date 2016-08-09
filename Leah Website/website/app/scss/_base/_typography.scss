@@ -16,29 +16,16 @@
 //
 //
 
+
+
 body { 
   color: black;
   font-size: 100%;
 
 }
 
-p{
-  font-family: 'Libre Franklin', sans-serif;  
-  @include font-size(18px);
-  color: #4A4A4A;
-  line-height: 39.2px;  
-}
 
-h1 a{
-  @include font-size(27px);
-  font-family: 'Libre Franklin', sans-serif;  
-  color: #302C3B; 
-  line-height: 33px;
-  font-weight: 600;    
-  text-decoration: none;
-}
 
-// only visibile on screen readers
 .hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -54,3 +41,98 @@ h1 a{
   display: none;
   visibility: hidden;
 } 
+
+//
+//  2. Headings
+//  -------------
+//
+//
+
+h1 a{
+  @include font-size(27px);
+  font-family: 'Libre Franklin', sans-serif;  
+  color: #302C3B; 
+  line-height: 33px;
+  font-weight: 600;    
+  text-decoration: none;
+}
+
+section.project h1 {
+    font-family: LibreFranklin-SemiBold;
+    @include font-size(39px);
+    color: #000000;
+    line-height: 45px;
+    margin: 30px 0px 65px 125px;
+}
+
+section.project .img-description h1 {
+    font-family: LibreFranklin-Medium;
+    @include font-size(12px);
+    color: #000000;
+    line-height: 25px;
+    margin: 0px 0px 0px 10px;
+    text-transform: uppercase;
+}
+
+.artwork-detail h1 {
+    font-family: LibreFranklin-Medium;
+     @include font-size(12px);
+    color: #000000;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.year h2 {
+    font-family: LibreFranklin-Medium;
+    margin: 10px 5px 0px -75px;
+    @include font-size(16px);
+    color: #000000;
+    line-height: 25px;
+}
+
+
+//
+//  3. Paragraphs
+//  -------------
+//
+//
+
+p{
+  font-family: 'Libre Franklin', sans-serif;  
+  @include font-size(18px);
+  color: #4A4A4A;
+  line-height: 39.2px;  
+}
+
+section.project .img-description p {
+    font-family: LibreFranklin-Medium;
+    @include font-size(12px);
+    color: #000000;
+    line-height: 25px;
+    margin: 0px 0px 10px 10px;
+}
+
+section.project p {
+    font-family: LibreFranklin-Regular;
+    @include font-size(14px);
+    color: #000000;
+    line-height: 27px;
+    margin: 20px 0px 20px 120px;
+}
+
+section.project .intro p {
+    font-family: LibreFranklin-Regular;
+    @include font-size(18px);
+    color: #4A4A4A;
+    line-height: 35.2px;
+    margin: 5px 0px 55px 125px;
+}
+
+.artwork-detail p {
+    font-family: LibreFranklin-Medium;
+    @include font-size(12px);
+    color: #000000;
+    line-height: 25px;
+}
+
+

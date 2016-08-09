@@ -1,157 +1,151 @@
 
 //navigation
 
-nav ul{
+nav ul {
     list-style-type: none;
     overflow: hidden;
     float: right;
-    padding-top: 40px
+    padding-top: 40px;
 }
 
-nav li{
-  float: left;
-  display: block;
+nav li {
+    float: left;
+    display: block;
 }
 
-nav li a {   
-  font-family: 'Libre Franklin', sans-serif;
-  @include font-size(18px);
-  font-weight: 400;
-  color: #302C3B;
-  line-height: 20px;
-  text-decoration: none; 
-  padding-left: 36px;
-  margin-left:10px;
-  display: inline-block;
+nav li a {
+    font-family: 'Libre Franklin', sans-serif;
+    @include font-size(18px);
+    font-weight: 400;
+    color: #302C3B;
+    line-height: 20px;
+    text-decoration: none;
+    padding-left: 36px;
+    margin-left: 10px;
+    display: inline-block;
 }
 
-.nav-bar{
-	min-height:105px;
-  margin-top: 15px;
-  border-bottom: 1px solid #E5E5E5;
+.nav-bar {
+    min-height: 105px;
+    margin-top: 15px;
+    border-bottom: 1px solid #E5E5E5;
 }
 
-.side-nav{
- min-height: 1px;
+.side-nav {
+    min-height: 1px;
 }
 
 @media screen and (max-width:640px) {
-  .side-nav{
-    display: none;
-  } 
+    .side-nav {
+        display: none;
+    }
 }
 
 .side-nav nav li a {
-
- font-family: 'Libre Franklin', sans-serif;
-  @include font-size(18px);
-  font-weight: 400;
-  color: #302C3B;
-  line-height: 20px;
-  text-decoration: none; 
-  padding:0px 0px 5px 0px;  
-  margin-left:0px;
-  display: inline-block;
+    font-family: 'Libre Franklin', sans-serif;
+    @include font-size(18px);
+    font-weight: 400;
+    color: #302C3B;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 0px 0px 5px 0px;
+    margin-left: 0px;
+    display: inline-block;
 }
 
-.side-nav nav ul{
+.side-nav nav ul {
     list-style-type: none;
-    height: 100%;  
+    height: 100%;
     float: left;
     padding-top: 0px;
     // position: fixed;
 }
 
-.side-nav nav li{
+.side-nav nav li {
     float: none;
-    display: block;  
+    display: block;
     max-width: 145px;
     margin-bottom: 30px;
 }
 
-
-nav li a:hover, a:active, .active {   
-  border-bottom:4px solid black;
-  padding-bottom:4px; 
-  
-
-}
-nav li:hover, li:active, .active {   
- margin-bottom: 27px; 
-  
-
-}
-nav li.nav-icon a:hover, a:active 
-{
-  border: 0;
+nav li a:hover, a:active, .active {
+    border-bottom: 4px solid black;
+    padding-bottom: 4px;
 }
 
+nav li:hover, li:active, .active {
+    margin-bottom: 27px;
+}
+
+nav li.nav-icon a:hover, a:active {
+    border: 0;
+}
 
 ul.topnav li.nav-icon {
-  display: none;
-  margin-top: -20px;
-  
-  
-  }
+    display: none;
+    margin-top: -20px;
+}
 
-
-
-
-.nav-icon img{
-  width: 150%;
-  height: 150%;
-
+.nav-icon img {
+    width: 150%;
+    height: 150%;
 }
 
 @media screen and (max-width: 1035px) {
- body .nav-links{
-    border-right: 10px solid transparent;
-  }
+    body .nav-links {
+        border-right: 10px solid transparent;
+    }
 }
 
-@media screen and (max-width: 760px) { 
-  nav li a{
-    padding-left:22px ; 
-  }
-}
-
-@media screen and (max-width:640px) {
-  ul.topnav li {display: none;}
-  ul.topnav li.nav-icon {
-    display: inline-block;
-      margin-right: 14px;
-  } 
+@media screen and (max-width: 760px) {
+    nav li a {
+        padding-left: 22px;
+    }
 }
 
 @media screen and (max-width:640px) {
-  ul.topnav.responsive {position: absolute;
-  margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-  
-  }
-  ul.topnav.responsive li.nav-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li { 
-    display: block;
-    margin-bottom: 20px;
-    float: none;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
+    ul.topnav li {
+        display: none;
+    }
+
+    ul.topnav li.nav-icon {
+        display: inline-block;
+        margin-right: 14px;
+    }
 }
 
-.nav-links{
-  border-right:0px;  
-} 
+@media screen and (max-width:640px) {
+    ul.topnav.responsive {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
 
-.header-top{
-	background: black;
-	height: 20px; 
+    ul.topnav.responsive li.nav-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.topnav.responsive li {
+        display: block;
+        margin-bottom: 20px;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+.nav-links {
+    border-right: 0px;
+}
+
+.header-top {
+    background: black;
+    height: 20px;
 }
