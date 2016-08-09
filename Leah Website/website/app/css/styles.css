@@ -948,16 +948,19 @@ ul.topnav li.nav-icon {
     float: right;
     display: inline-block;
     margin: 0  0 30px 0;
-    width: 100%; }
+    width: 100%;
+    padding: 0 0 5px 0; }
   ul.topnav.responsive li a {
     display: block;
     text-align: right;
     padding: 0 0 9px 0; }
-  ul.responsive li a:hover, .active {
+  ul.topnav.responsive li.nav-icon a:hover {
     display: block;
     text-align: right;
-    padding: 0 0 5px 0 !important; }
-  ul.responsive li a.nav-icon-link:hover {
+    padding: 0 0 9px 0 !important; }
+  ul.topnav.responsive li a:hover, .active {
+    display: block;
+    text-align: right;
     padding: 0 0 5px 0 !important; } }
 
 .nav-links {
