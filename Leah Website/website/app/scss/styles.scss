@@ -47,9 +47,13 @@ main {
 }
 
 //selected works
+img.no-indent{
+    margin:0 20px 0 -20px !important;
+
+}
 .artwork img {
     float: left;
-    margin:0 20px 0 -20px;
+    margin:0 20px 0 0px;
     padding: 0px 10px 10px 0px;
     max-width: 100%;
 }

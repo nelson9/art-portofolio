@@ -5,7 +5,6 @@ nav ul {
     list-style-type: none;
     overflow: hidden;
     float: right;
-    padding-top: 40px;
 }
 
 nav li {
@@ -28,7 +27,6 @@ nav li a {
 .nav-bar {
     min-height: 105px;
     margin-top: 15px;
-    border-bottom: 1px solid #E5E5E5;
 }
 
 .side-nav {
@@ -83,12 +81,10 @@ nav li.nav-icon a:hover {
 
 ul.topnav li.nav-icon {
     display: none;
-    margin-top: -20px;
 }
 
 .nav-icon img {
-    width: 150%;
-    height: 150%;
+    width: 60px;   
 }
 
 @media screen and (max-width: 1035px) {
@@ -115,30 +111,38 @@ ul.topnav li.nav-icon {
 }
 
 @media screen and (max-width:640px) {
+    
     ul.topnav.responsive {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-    }
-
-    ul.topnav.responsive li.nav-icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+        position: relative;
+        padding-right: 14px;
+    
     }
 
     ul.topnav.responsive li {
-        display: block;
-        margin-bottom: 20px;
-        float: none;
+        float: right;
+        display: inline-block;
+        margin: 0  0 30px 0;
+        width:100%;
     }
 
     ul.topnav.responsive li a {
         display: block;
-        text-align: left;
+        text-align: right;
+        padding: 0 0 9px 0;
     }
+
+    ul.responsive li a:hover, .active  {
+        display: block;
+        text-align: right;
+        padding: 0 0 5px 0 !important;
+    }
+
+      ul.responsive li a.nav-icon-link:hover  {
+        padding: 0 0 5px 0 !important;
+    }
+
+   
+  
 }
 
 .nav-links {
