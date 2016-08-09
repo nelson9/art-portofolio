@@ -68,16 +68,16 @@ nav li a {
     margin-bottom: 30px;
 }
 
-nav li a:hover, a:active, .active {
+nav li a:hover, .active {
     border-bottom: 4px solid black;
     padding-bottom: 4px;
 }
 
-nav li:hover, li:active, .active {
+nav li:hover {
     margin-bottom: 27px;
 }
 
-nav li.nav-icon a:hover, a:active {
+nav li.nav-icon a:hover {
     border: 0;
 }
 

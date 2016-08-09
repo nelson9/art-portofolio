@@ -49,17 +49,17 @@ main {
 //selected works
 .artwork img {
     float: left;
-    margin-right: 20px;
+    margin:0 20px 0 -20px;
     padding: 0px 10px 10px 0px;
     max-width: 100%;
 }
 
 .artwork {
-    padding: 0px 0px 30px 105px;
-    border-bottom: 0.5px solid #E5E5E5;
+  
     width: 100%;
     display: inline-block;
-    margin: 20px 0px 0px -85px;
+    margin-bottom: 10px;
+
 }
 
 .artwork-detail {
@@ -73,31 +73,31 @@ main {
 }
 
 //projects
-
-
-
-section.project img {
-    margin: 10px 0px 10px 75px;
-    float: left;
-    margin-right: 20px;
-    padding: 0px 10px 10px 0px;
-    max-width: 100%;
-}
-
-section.project .img-description {
-    margin: 0px 0px 45px 65px;
-}
-
-section.project {
+@mixin section-content{
     border-bottom: 0.5px solid #E5E5E5;
     margin: 20px 0px 0px -85px;
+    padding:0px 0px 30px 85px;
+}
+section.selected-works{
+    @include section-content;
+}
+section.project {
+    @include section-content;
 }
 
 @media screen and (max-width:640px) {
-    .artwork {
-        padding-left: 75px;
+    section.selected-works {
+       margin:20px 10px 0 -95px;
     }
+
+    section.project {
+    @include section-content;
+     margin:20px 10px 0 -95px;
+}
     .artwork img {
+        width: inherit;
+    }
+    .artwork  {
         width: inherit;
     }
 }
