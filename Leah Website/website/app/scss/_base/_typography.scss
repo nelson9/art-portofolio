@@ -75,7 +75,9 @@ section.project h1 {
 }
 
 .artwork-detail h1 {
-@include artworkdetail;
+    border-top: 1px solid black;
+    @include artworkdetail;
+    padding-top: 5px;
 }
 
 section.project .artwork-detail h1 {

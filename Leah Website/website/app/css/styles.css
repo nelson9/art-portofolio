@@ -781,12 +781,14 @@ section.project h1 {
   font-weight: 600; }
 
 .artwork-detail h1 {
+  border-top: 1px solid black;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
   color: #000000;
   line-height: 25px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 5px; }
 
 section.project .artwork-detail h1 {
   font-family: 'Libre Franklin', sans-serif;
@@ -1020,7 +1022,8 @@ img.no-indent {
 
 .artwork-detail {
   width: 180px;
-  float: left; }
+  float: left;
+  margin-top: 10px; }
 
 .hidden {
   visibility: hidden; }
