@@ -108,6 +108,22 @@ ul.topnav li.nav-icon {
         display: inline-block;
         margin-right: 14px;
     }
+
+    nav.open {
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        background-color: black;
+        height: 100%;
+
+        li a {
+            color:white;
+                text-transform: uppercase;
+    font-size: 36px;
+    line-height: 43px;
+        }
+    }  
 }
 
 @media screen and (max-width:640px) {

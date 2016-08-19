@@ -1,8 +1,19 @@
 $(document).ready(function () { 
         
     $('.nav-icon').click(function () {
-                $('#myTopnav').toggleClass('responsive');
+                 $('nav').toggleClass('open');
+            
+                $('#myTopnav').toggleClass('responsive').slideDown();
             });
+
+    // $( window ).resize(function() {
+    //      $('nav').css('height', $(window).height() 
+         
+         
+         
+         
+    //      );
+         
 
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
