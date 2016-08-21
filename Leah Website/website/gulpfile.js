@@ -14,8 +14,10 @@ gulp.task('sass', function(){
     }))
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function () {
+gulp.task('watch', ['browserSync', 'sass', 'scripts'], function () {
     gulp.watch('app/scss/**/*.scss' , ['sass']);
+    gulp.watch('app/scripts/**/*.js' , ['scripts']);
+
 });
 
 
