@@ -922,10 +922,10 @@ nav li:hover {
   display: none; }
 
 #menu-icon {
-  width: 60px; }
+  width: 45px; }
 
 #menu-cross {
-  width: 50px;
+  width: 35px;
   margin-right: 15px; }
 
 @media screen and (max-width: 1035px) {
@@ -949,13 +949,13 @@ nav li:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
     height: 100%;
     z-index: 10; } }
 
 @media screen and (max-width: 640px) {
   ul.topnav.responsive {
-    margin: 125px auto 10px auto; }
+    margin: 75px auto 10px auto; }
   ul.topnav.responsive li {
     display: block;
     width: 100%;
@@ -979,12 +979,16 @@ nav li:hover {
   background: black;
   height: 20px; }
 
+.noScroll {
+  overflow: hidden;
+  position: fixed; }
+
 .footer-container {
   background-color: rgba(255, 255, 255, 0.25); }
 
 footer {
   margin-top: 20px;
-  height: 80px;
+  height: 56px;
   width: 100%;
   position: fixed;
   bottom: 0;
