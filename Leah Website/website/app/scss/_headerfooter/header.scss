@@ -75,16 +75,18 @@ nav li:hover {
     margin-bottom: 27px;
 }
 
-nav li.nav-icon a:hover {
-    border: 0;
-}
 
-ul.topnav li.nav-icon {
+.nav-icon {
     display: none;
 }
 
-.nav-icon img {
+#menu-icon  {
     width: 60px;   
+}
+
+#menu-cross  {
+    width: 50px;   
+    margin-right: 15px;
 }
 
 @media screen and (max-width: 1035px) {
@@ -103,10 +105,11 @@ ul.topnav li.nav-icon {
     ul.topnav li {
         display: none;
     }
-
-    ul.topnav li.nav-icon {
-        display: inline-block;
-        margin-right: 14px;
+    .nav-icon{
+        position: absolute;
+        right: 10px;
+        top: 27px;
+        display: block;
     }
 
     nav.open {
@@ -114,55 +117,41 @@ ul.topnav li.nav-icon {
         top: 0;
         left:0;
         width: 100%;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.8);
         height: 100%;
-        z-index: 10; 
-
-        li a {
-            color:white;
-            text-transform: uppercase;
-            font-size: 36px;
-            line-height: 43px;
-
-        .nav-bar h1{
-            color: white;}
-        }
-    }  
+        z-index: 10;    
+    }
 }
 
 @media screen and (max-width:640px) {
     
     ul.topnav.responsive {
-        position: relative;
-        padding-right: 14px;
+        margin: 125px auto 10px auto;
     
     }
 
-    ul.topnav.responsive li {
-        float: right;
-        display: inline-block;
-        margin: 0  14px 30px 0;
-        padding: 0 0 5px 0;
-
+    ul.topnav.responsive li {   
+        display: block;
+        width:100%;
+        margin-bottom: 40px;
+      
     }
 
     ul.topnav.responsive li a {
         display: block;
-        text-align: right;
-        padding: 0 0 9px 0;
+        text-align: center;
+          color:white;
+            text-transform: uppercase;
+            font-size: 36px;
+            line-height: 43px;
+            padding: 0px;
+   
     }
-
-    ul.topnav.responsive li.nav-icon a:hover  {
-        display: block;
-        text-align: right;
-        padding: 0 0 9px 0 !important;
-    }
-
-    ul.topnav.responsive li a:hover, .active  {
-        display: block;
-        text-align: right;
-        padding: 0 0 5px 0 !important;
-    }    
+nav li a:hover, .active {
+    border: none;
+    padding-bottom: 0;
+}
+  
 
 }
 

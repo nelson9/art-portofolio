@@ -5,7 +5,7 @@ $(document).ready(function () {
                 $('nav').toggleClass('open');
                 $('#menu-icon').toggleClass('hide');
                 $('#menu-cross').toggleClass('hide');
-                  $('.home-title').toggleClass('hidden');
+                $('.home-title').toggleClass('hide');
 
             });
 
@@ -26,7 +26,10 @@ $(document).ready(function () {
         if($(window).width() > 640){
              $('nav').removeClass('open'); 
              $('#myTopnav').removeClass('responsive'); 
- 
+             $('.home-title').removeClass('hide'); 
+             $('#menu-icon').removeClass('hide');
         }
+
+     
     }); 
 });
