@@ -24,7 +24,7 @@
 
 
 .home-content {
-    background-image: url('../img/asdf.png');
+    background-image: url('../img/artwork1.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -32,7 +32,24 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 1000px;
+    height: 960px;
+}
+
+.home-about{
+    background-color: #363738;
+    padding: 130px 50px 130px 50px;
+
+    p, h1, h2{
+        color:white;
+        text-align: center;
+        font-size: 1em;
+            line-height: 31.2px;
+    }
+}
+
+.bio{
+    margin: 0 auto;
+    width: 850px;
 }
 
 //main

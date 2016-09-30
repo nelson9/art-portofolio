@@ -8,8 +8,8 @@ footer {
     margin-top: 20px;
     height: 56px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+ 
+  
     background-color: white;
     padding-top: 20px;
 
@@ -21,4 +21,23 @@ footer a {
 
 footer img {
     padding-right: 3px;
+}
+
+.social-media{
+    margin: 0 auto;
+        width: 128px;
+}
+
+.copyright{
+    margin: 10px auto 10px auto;
+        width: 350px;
+
+         p{
+            font-size: 0.75em;
+          
+        }
+        a{
+              color:black;
+            text-decoration: none;
+        }
 }

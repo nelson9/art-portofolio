@@ -23,10 +23,11 @@ nav li a {
     margin-left: 10px;
     display: inline-block;
 }
-
+ 
 .nav-bar {
-    min-height: 105px;
-    margin-top: 15px;
+    min-height: 55px;
+
+     margin:25px 50px 0 50px
 }
 
 .side-nav {
@@ -151,6 +152,8 @@ nav li a:hover, .active {
     border: none;
     padding-bottom: 0;
 }
+
+
   
 
 }
@@ -161,7 +164,7 @@ nav li a:hover, .active {
 
 .header-top {
     background: black;
-    height: 20px;
+    height: 12px;
 }
 
 .noScroll {
