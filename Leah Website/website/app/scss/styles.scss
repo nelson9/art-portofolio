@@ -43,13 +43,21 @@
         color:white;
         text-align: center;
         font-size: 1em;
-            line-height: 31.2px;
+        line-height: 31.2px;
     }
 }
 
 .bio{
     margin: 0 auto;
     width: 850px;
+
+    h2{
+          @include font-size(22px);
+          margin-bottom: 25px;
+    }
+    a{
+        color:#f48c42;
+    }
 }
 
 //main

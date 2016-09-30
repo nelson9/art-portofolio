@@ -771,6 +771,15 @@ h1 a {
   font-weight: 700;
   text-decoration: none; }
 
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #302C3B;
+  line-height: 33px;
+  font-weight: 700;
+  text-decoration: none; }
+
 section.project h1 {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 39px;
@@ -996,7 +1005,7 @@ nav li:hover {
   background-color: rgba(255, 255, 255, 0.25); }
 
 footer {
-  margin-top: 20px;
+  margin-top: 70px;
   height: 56px;
   width: 100%;
   background-color: white;
@@ -1044,6 +1053,12 @@ footer img {
 .bio {
   margin: 0 auto;
   width: 850px; }
+  .bio h2 {
+    font-size: 22px;
+    font-size: 1.375rem;
+    margin-bottom: 25px; }
+  .bio a {
+    color: #f48c42; }
 
 main {
   min-height: 500px;

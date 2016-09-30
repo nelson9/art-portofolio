@@ -65,6 +65,15 @@ h1 a{
   text-decoration: none;
 }
 
+h2 {
+  @include font-size(24px);
+  font-family: 'Libre Franklin', sans-serif;  
+  color: #302C3B; 
+  line-height: 33px;
+  font-weight: 700;    
+  text-decoration: none;
+}
+
 section.project h1 {
     font-family: 'Libre Franklin', sans-serif;  
     @include font-size(39px);
