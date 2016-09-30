@@ -31,7 +31,7 @@ nav li a {
 }
 
 .side-nav {
-    min-height: 1px;
+margin-bottom: 1px solid black;
 }
 
 @media screen and (max-width:640px) {
@@ -61,15 +61,15 @@ nav li a {
 }
 
 .side-nav nav li {
-    float: none;
+    float: left;
     display: block;
     max-width: 145px;
     margin-bottom: 30px;
 }
 
 nav li a:hover, .active {
-    border-bottom: 4px solid black;
-    padding-bottom: 4px;
+    border-bottom: 2px solid black;
+    padding-bottom: 6px;
 }
 
 nav li:hover {

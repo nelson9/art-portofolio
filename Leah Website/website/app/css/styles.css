@@ -881,7 +881,7 @@ nav li a {
   margin: 25px 50px 0 50px; }
 
 .side-nav {
-  min-height: 1px; }
+  margin-bottom: 1px solid black; }
 
 @media screen and (max-width: 640px) {
   .side-nav {
@@ -906,14 +906,14 @@ nav li a {
   padding-top: 0px; }
 
 .side-nav nav li {
-  float: none;
+  float: left;
   display: block;
   max-width: 145px;
   margin-bottom: 30px; }
 
 nav li a:hover, .active {
-  border-bottom: 4px solid black;
-  padding-bottom: 4px; }
+  border-bottom: 2px solid black;
+  padding-bottom: 6px; }
 
 nav li:hover {
   margin-bottom: 27px; }
@@ -1013,7 +1013,7 @@ footer img {
     text-decoration: none; }
 
 .home-content {
-  background-image: url("../img/artwork1.png");
+  background-image: url("../img/Image 6.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -1041,7 +1041,6 @@ main {
   padding-top: 40px; }
 
 .main-content {
-  border-left: 1px solid #E5E5E5;
   padding: 30px 0px 80px 30px;
   margin-top: -65px; }
 
