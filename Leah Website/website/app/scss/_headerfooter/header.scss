@@ -31,7 +31,8 @@ nav li a {
 }
 
 .side-nav {
-margin-bottom: 1px solid black;
+    margin-top: 20px;
+    margin-right: 50px;
 }
 
 @media screen and (max-width:640px) {
@@ -42,7 +43,7 @@ margin-bottom: 1px solid black;
 
 .side-nav nav li a {
     font-family: 'Libre Franklin', sans-serif;
-    @include font-size(18px);
+    @include font-size(14px);
     font-weight: 400;
     color: #302C3B;
     line-height: 20px;
@@ -53,18 +54,25 @@ margin-bottom: 1px solid black;
 }
 
 .side-nav nav ul {
-    list-style-type: none;
+      list-style-type: none;
     height: 100%;
-    float: left;
+    float: right;
     padding-top: 0px;
-    // position: fixed;
+    /* border-top: 1px solid black; */
+    margin-bottom: 50px;
+    margin-top: -20px;
+    /* border-bottom: 1px solid black; */
+    padding-bottom: 0px;
 }
 
 .side-nav nav li {
     float: left;
     display: block;
-    max-width: 145px;
+    padding:0 5px 0 5px;
     margin-bottom: 30px;
+}
+.side-nav nav li::after{
+    content: "\00a0 \00a0 \00a0 /  ";
 }
 
 nav li a:hover, .active {

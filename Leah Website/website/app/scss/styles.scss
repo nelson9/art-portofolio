@@ -60,8 +60,10 @@ main {
 
 .main-content {
   
-    padding: 30px 0px 80px 30px;
-    margin-top: -65px;
+    padding: 0px 0px 80px 30px;
+    margin-top: -45px;
+    border-left: 0.5px solid #E5E5E5;
+
 }
 
 //selected works
@@ -73,7 +75,7 @@ img.no-indent{
     float: left;
     margin:0 20px 0 0px;
     padding: 0px 10px 10px 0px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .artwork {
@@ -97,7 +99,7 @@ img.no-indent{
 //projects
 @mixin section-content{
     border-bottom: 0.5px solid #E5E5E5;
-    margin: 20px 0px 0px -85px;
+    margin: 0px 0px 0px -85px;
     padding:0px 0px 30px 85px;
 }
 section.selected-works{
@@ -109,12 +111,12 @@ section.project {
 
 @media screen and (max-width:640px) {
     section.selected-works {
-       margin:20px 10px 0 -95px;
+       margin:0px 10px 0 -95px;
     }
 
     section.project {
     @include section-content;
-     margin:20px 10px 0 -95px;
+     margin:0px 10px 0 -95px;
 }
     .artwork img {
         width: inherit;

@@ -71,7 +71,7 @@ input[type='text']::-ms-clear {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px; }
+  max-width: 1800px; }
   .container:before, .container:after {
     content: '';
     display: table; }
@@ -79,7 +79,7 @@ input[type='text']::-ms-clear {
     clear: both; }
 
 .fixed {
-  width: 1000px; }
+  width: 1800px; }
 
 .row {
   clear: both;
@@ -202,7 +202,7 @@ input[type='text']::-ms-clear {
   margin-right: 0;
   width: 100%; }
 
-@media screen and (min-width: 640px) and (max-width: 900px) {
+@media screen and (min-width: 640px) and (max-width: 1000px) {
   .medium-1 {
     width: 8.33333%; }
   .medium-1.no-padding {
@@ -334,7 +334,7 @@ input[type='text']::-ms-clear {
   .small-full-width {
     margin: 0 -10px; } }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .large-offset-1 {
     margin-left: 8.33333%; }
   .large-offset-2 {
@@ -360,7 +360,7 @@ input[type='text']::-ms-clear {
   .large-offset-12 {
     margin-left: 100%; } }
 
-@media screen and (min-width: 640px) and (max-width: 900px) {
+@media screen and (min-width: 640px) and (max-width: 1000px) {
   .medium-offset-1 {
     margin-left: 8.33333%; }
   .medium-offset-2 {
@@ -412,12 +412,12 @@ input[type='text']::-ms-clear {
   .small-offset-12 {
     margin-left: 100%; } }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1800px) {
   .container {
     padding: 0 10px; } }
 
 .ie .container {
-  width: 1000px; }
+  width: 1800px; }
 
 .ie .large-offset-1 {
   margin-left: 8.33333%; }
@@ -544,7 +544,7 @@ hr {
   margin-bottom: 60px;
   margin-top: 60px; }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1000px) {
   .mbm0 {
     margin-bottom: 0px; }
   .mbm10 {
@@ -777,7 +777,7 @@ section.project h1 {
   font-size: 2.4375rem;
   color: #000000;
   line-height: 45px;
-  margin: 30px 0px 55px 50px;
+  margin: 30px 0px 35px 50px;
   font-weight: 600; }
 
 .artwork-detail h1 {
@@ -832,7 +832,7 @@ section.project .intro {
   font-size: 1.125rem;
   color: #4A4A4A;
   line-height: 35.2px;
-  margin: 5px 0px 55px 50px; }
+  margin: 5px 0px 25px 50px; }
 
 section.project .project-detail {
   font-family: 'Libre Franklin', sans-serif;
@@ -881,7 +881,8 @@ nav li a {
   margin: 25px 50px 0 50px; }
 
 .side-nav {
-  margin-bottom: 1px solid black; }
+  margin-top: 20px;
+  margin-right: 50px; }
 
 @media screen and (max-width: 640px) {
   .side-nav {
@@ -889,8 +890,8 @@ nav li a {
 
 .side-nav nav li a {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #302C3B;
   line-height: 20px;
@@ -902,14 +903,22 @@ nav li a {
 .side-nav nav ul {
   list-style-type: none;
   height: 100%;
-  float: left;
-  padding-top: 0px; }
+  float: right;
+  padding-top: 0px;
+  /* border-top: 1px solid black; */
+  margin-bottom: 50px;
+  margin-top: -20px;
+  /* border-bottom: 1px solid black; */
+  padding-bottom: 0px; }
 
 .side-nav nav li {
   float: left;
   display: block;
-  max-width: 145px;
+  padding: 0 5px 0 5px;
   margin-bottom: 30px; }
+
+.side-nav nav li::after {
+  content: "\00a0 \00a0 \00a0 /  "; }
 
 nav li a:hover, .active {
   border-bottom: 2px solid black;
@@ -1041,8 +1050,9 @@ main {
   padding-top: 40px; }
 
 .main-content {
-  padding: 30px 0px 80px 30px;
-  margin-top: -65px; }
+  padding: 0px 0px 80px 30px;
+  margin-top: -45px;
+  border-left: 0.5px solid #E5E5E5; }
 
 img.no-indent {
   margin: 0 20px 0 -20px !important; }
@@ -1051,7 +1061,7 @@ img.no-indent {
   float: left;
   margin: 0 20px 0 0px;
   padding: 0px 10px 10px 0px;
-  max-width: 100%; }
+  width: 100%; }
 
 .artwork {
   width: 100%;
@@ -1067,22 +1077,22 @@ img.no-indent {
 
 section.selected-works {
   border-bottom: 0.5px solid #E5E5E5;
-  margin: 20px 0px 0px -85px;
+  margin: 0px 0px 0px -85px;
   padding: 0px 0px 30px 85px; }
 
 section.project {
   border-bottom: 0.5px solid #E5E5E5;
-  margin: 20px 0px 0px -85px;
+  margin: 0px 0px 0px -85px;
   padding: 0px 0px 30px 85px; }
 
 @media screen and (max-width: 640px) {
   section.selected-works {
-    margin: 20px 10px 0 -95px; }
+    margin: 0px 10px 0 -95px; }
   section.project {
     border-bottom: 0.5px solid #E5E5E5;
-    margin: 20px 0px 0px -85px;
+    margin: 0px 0px 0px -85px;
     padding: 0px 0px 30px 85px;
-    margin: 20px 10px 0 -95px; }
+    margin: 0px 10px 0 -95px; }
   .artwork img {
     width: inherit; }
   .artwork {
