@@ -35,28 +35,29 @@
     height: 960px;
 }
 
-.home-about{
+.home-about {
     background-color: #363738;
     padding: 130px 50px 130px 50px;
 
-    p, h1, h2{
-        color:white;
+    p, h1, h2 {
+        color: white;
         text-align: center;
         font-size: 1em;
         line-height: 31.2px;
     }
 }
 
-.bio{
-   
-   
+.bio {
 
-    h2{
-          @include font-size(22px);
-          margin-bottom: 25px;
+
+
+    h2 {
+        @include font-size(22px);
+        margin-bottom: 25px;
     }
-    a{
-        color:#f48c42;
+
+    a {
+        color: #f48c42;
     }
 }
 
@@ -65,34 +66,29 @@ main {
     min-height: 500px;
     margin-top: 20px;
     padding: 0 50px 0 50px;
-
 }
 
 .main-content {
-  
     padding: 0px 0px 80px 0px;
     border-left: 0.5px solid #E5E5E5;
-
 }
 
 //selected works
-img.no-indent{
-    margin:0 20px 0 -20px !important;
-
+img.no-indent {
+    margin: 0 20px 0 -20px !important;
 }
+
 .artwork img {
     float: left;
-    margin:0 0px 0 -20px;
+    margin: 0 0px 0 -20px;
     padding: 0px 0px 10px 0px;
     max-width: 100%;
 }
 
 .artwork {
-  
     width: 100%;
     display: inline-block;
     margin-bottom: 10px;
-
 }
 
 .artwork-detail {
@@ -106,41 +102,52 @@ img.no-indent{
 }
 
 //projects
-@mixin section-content{
+@mixin section-content {
     border-bottom: 0.5px solid #E5E5E5;
     margin: 0px 0px 0px -45px;
-    padding:0px 0px 30px 64px;
+    padding: 0px 0px 30px 64px;
 }
-section.selected-works{
+
+section.selected-works {
     @include section-content;
+    li{
+        float:left;
+        margin-right:10px;
+    }
+    display:block;
+    border-bottom:none;
 }
+
 section.project {
     @include section-content;
 }
 
 @media screen and (max-width:640px) {
-    main{
-         padding: 0;
+    main {
+        padding: 0;
     }
 
-    .main-content{
-           padding: 0px 0px 80px 0px;
-    border: 0px;
+    .main-content {
+        padding: 0px 0px 80px 0px;
+        border: 0px;
     }
+
     section.selected-works {
-       margin:0px 10px 0 -95px;
+        margin: 0px 10px 0 -95px;
     }
 
     section.project {
-    @include section-content;
-     margin:0;
-     padding: 0;
-}
+        @include section-content;
+        margin: 0;
+        padding: 0;
+    }
+
     .artwork img {
         width: inherit;
         margin: 0px;
     }
-    .artwork  {
+
+    .artwork {
         width: inherit;
     }
 }

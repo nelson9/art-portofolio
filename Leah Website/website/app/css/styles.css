@@ -1096,7 +1096,12 @@ img.no-indent {
 section.selected-works {
   border-bottom: 0.5px solid #E5E5E5;
   margin: 0px 0px 0px -45px;
-  padding: 0px 0px 30px 64px; }
+  padding: 0px 0px 30px 64px;
+  display: block;
+  border-bottom: none; }
+  section.selected-works li {
+    float: left;
+    margin-right: 10px; }
 
 section.project {
   border-bottom: 0.5px solid #E5E5E5;
