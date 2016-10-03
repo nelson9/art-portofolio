@@ -48,8 +48,8 @@
 }
 
 .bio{
-    margin: 0 auto;
-    width: 850px;
+   
+   
 
     h2{
           @include font-size(22px);
@@ -63,13 +63,14 @@
 //main
 main {
     min-height: 500px;
-    padding-top: 40px;
+    margin-top: 20px;
+    padding: 0 50px 0 50px;
+
 }
 
 .main-content {
   
-    padding: 0px 0px 80px 30px;
-    margin-top: -45px;
+    padding: 0px 0px 80px 0px;
     border-left: 0.5px solid #E5E5E5;
 
 }
@@ -81,9 +82,9 @@ img.no-indent{
 }
 .artwork img {
     float: left;
-    margin:0 20px 0 0px;
-    padding: 0px 10px 10px 0px;
-    width: 100%;
+    margin:0 0px 0 -20px;
+    padding: 0px 0px 10px 0px;
+    max-width: 100%;
 }
 
 .artwork {
@@ -107,8 +108,8 @@ img.no-indent{
 //projects
 @mixin section-content{
     border-bottom: 0.5px solid #E5E5E5;
-    margin: 0px 0px 0px -85px;
-    padding:0px 0px 30px 85px;
+    margin: 0px 0px 0px -45px;
+    padding:0px 0px 30px 64px;
 }
 section.selected-works{
     @include section-content;
@@ -118,16 +119,26 @@ section.project {
 }
 
 @media screen and (max-width:640px) {
+    main{
+         padding: 0;
+    }
+
+    .main-content{
+           padding: 0px 0px 80px 0px;
+    border: 0px;
+    }
     section.selected-works {
        margin:0px 10px 0 -95px;
     }
 
     section.project {
     @include section-content;
-     margin:0px 10px 0 -95px;
+     margin:0;
+     padding: 0;
 }
     .artwork img {
         width: inherit;
+        margin: 0px;
     }
     .artwork  {
         width: inherit;

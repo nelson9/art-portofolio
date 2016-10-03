@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,700,800,400italic);
+@import url(https://fonts.googleapis.com/css?family=Carrois+Gothic);
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -71,7 +72,7 @@ input[type='text']::-ms-clear {
 
 .container {
   margin: 0 auto;
-  max-width: 1800px; }
+  max-width: 1200px; }
   .container:before, .container:after {
     content: '';
     display: table; }
@@ -79,7 +80,7 @@ input[type='text']::-ms-clear {
     clear: both; }
 
 .fixed {
-  width: 1800px; }
+  width: 1200px; }
 
 .row {
   clear: both;
@@ -412,12 +413,12 @@ input[type='text']::-ms-clear {
   .small-offset-12 {
     margin-left: 100%; } }
 
-@media all and (max-width: 1800px) {
+@media all and (max-width: 1200px) {
   .container {
     padding: 0 10px; } }
 
 .ie .container {
-  width: 1800px; }
+  width: 1200px; }
 
 .ie .large-offset-1 {
   margin-left: 8.33333%; }
@@ -763,9 +764,9 @@ body {
   visibility: hidden; }
 
 h1 a {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  font-family: 'Libre Franklin', sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: 'Carrois Gothic', sans-serif;
   color: #302C3B;
   line-height: 33px;
   font-weight: 700;
@@ -786,7 +787,7 @@ section.project h1 {
   font-size: 2.4375rem;
   color: #000000;
   line-height: 45px;
-  margin: 30px 0px 35px 50px;
+  margin: 30px 0px 35px 30px;
   font-weight: 600; }
 
 .artwork-detail h1 {
@@ -841,7 +842,7 @@ section.project .intro {
   font-size: 1.125rem;
   color: #4A4A4A;
   line-height: 35.2px;
-  margin: 5px 0px 25px 50px; }
+  margin: 5px 0px 25px 30px; }
 
 section.project .project-detail {
   font-family: 'Libre Franklin', sans-serif;
@@ -849,7 +850,7 @@ section.project .project-detail {
   font-size: 0.875rem;
   color: #000000;
   line-height: 27px;
-  margin: 20px 0px 20px 50px; }
+  margin: 20px 0px 20px 30px; }
 
 .artwork-detail p {
   font-family: 'Libre Franklin', sans-serif;
@@ -871,7 +872,8 @@ nav ul {
 
 nav li {
   float: left;
-  display: block; }
+  display: block;
+  margin-bottom: 5px; }
 
 nav li a {
   font-family: 'Libre Franklin', sans-serif;
@@ -883,15 +885,16 @@ nav li a {
   text-decoration: none;
   padding-left: 36px;
   margin-left: 10px;
-  display: inline-block; }
+  display: inline-block;
+  padding-bottom: 10px; }
 
 .nav-bar {
-  min-height: 55px;
-  margin: 25px 50px 0 50px; }
+  min-height: 45px;
+  margin-bottom: 25px;
+  padding: 30px 50px 0 50px; }
 
 .side-nav {
-  margin-top: 20px;
-  margin-right: 50px; }
+  margin-top: 40px; }
 
 @media screen and (max-width: 640px) {
   .side-nav {
@@ -913,12 +916,7 @@ nav li a {
   list-style-type: none;
   height: 100%;
   float: right;
-  padding-top: 0px;
-  /* border-top: 1px solid black; */
-  margin-bottom: 50px;
-  margin-top: -20px;
-  /* border-bottom: 1px solid black; */
-  padding-bottom: 0px; }
+  margin-top: -20px; }
 
 .side-nav nav li {
   float: left;
@@ -931,10 +929,7 @@ nav li a {
 
 nav li a:hover, .active {
   border-bottom: 2px solid black;
-  padding-bottom: 6px; }
-
-nav li:hover {
-  margin-bottom: 27px; }
+  margin-bottom: -2px; }
 
 .nav-icon {
   display: none; }
@@ -944,7 +939,7 @@ nav li:hover {
 
 #menu-cross {
   width: 35px;
-  margin-right: 15px; }
+  margin-top: 3px; }
 
 @media screen and (max-width: 1035px) {
   body .nav-links {
@@ -955,11 +950,13 @@ nav li:hover {
     padding-left: 22px; } }
 
 @media screen and (max-width: 640px) {
+  .nav-bar {
+    padding: 30px 10px 0 10px; }
   ul.topnav li {
     display: none; }
   .nav-icon {
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 27px;
     display: block; }
   nav.open {
@@ -969,7 +966,10 @@ nav li:hover {
     width: 100%;
     background-color: black;
     height: 100%;
-    z-index: 10; } }
+    z-index: 10;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out; } }
 
 @media screen and (max-width: 640px) {
   ul.topnav.responsive {
@@ -983,12 +983,13 @@ nav li:hover {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 23px;
     padding: 0px; }
   nav li a:hover, .active {
     border: none;
-    padding-bottom: 0; } }
+    margin-bottom: 0px; } }
 
 .nav-links {
   border-right: 0px; }
@@ -1018,14 +1019,18 @@ footer img {
   padding-right: 3px; }
 
 .social-media {
+  padding: 0 8px 0 8px;
   margin: 0 auto;
-  width: 128px; }
+  width: 135px; }
 
 .copyright {
   margin: 10px auto 10px auto;
-  width: 350px; }
+  padding: 0 8px 0 8px; }
   .copyright p {
-    font-size: 0.75em; }
+    font-size: 12px;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 20px; }
   .copyright a {
     color: black;
     text-decoration: none; }
@@ -1050,23 +1055,21 @@ footer img {
     font-size: 1em;
     line-height: 31.2px; }
 
-.bio {
-  margin: 0 auto;
-  width: 850px; }
-  .bio h2 {
-    font-size: 22px;
-    font-size: 1.375rem;
-    margin-bottom: 25px; }
-  .bio a {
-    color: #f48c42; }
+.bio h2 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-bottom: 25px; }
+
+.bio a {
+  color: #f48c42; }
 
 main {
   min-height: 500px;
-  padding-top: 40px; }
+  margin-top: 20px;
+  padding: 0 50px 0 50px; }
 
 .main-content {
-  padding: 0px 0px 80px 30px;
-  margin-top: -45px;
+  padding: 0px 0px 80px 0px;
   border-left: 0.5px solid #E5E5E5; }
 
 img.no-indent {
@@ -1074,9 +1077,9 @@ img.no-indent {
 
 .artwork img {
   float: left;
-  margin: 0 20px 0 0px;
-  padding: 0px 10px 10px 0px;
-  width: 100%; }
+  margin: 0 0px 0 -20px;
+  padding: 0px 0px 10px 0px;
+  max-width: 100%; }
 
 .artwork {
   width: 100%;
@@ -1092,23 +1095,30 @@ img.no-indent {
 
 section.selected-works {
   border-bottom: 0.5px solid #E5E5E5;
-  margin: 0px 0px 0px -85px;
-  padding: 0px 0px 30px 85px; }
+  margin: 0px 0px 0px -45px;
+  padding: 0px 0px 30px 64px; }
 
 section.project {
   border-bottom: 0.5px solid #E5E5E5;
-  margin: 0px 0px 0px -85px;
-  padding: 0px 0px 30px 85px; }
+  margin: 0px 0px 0px -45px;
+  padding: 0px 0px 30px 64px; }
 
 @media screen and (max-width: 640px) {
+  main {
+    padding: 0; }
+  .main-content {
+    padding: 0px 0px 80px 0px;
+    border: 0px; }
   section.selected-works {
     margin: 0px 10px 0 -95px; }
   section.project {
     border-bottom: 0.5px solid #E5E5E5;
-    margin: 0px 0px 0px -85px;
-    padding: 0px 0px 30px 85px;
-    margin: 0px 10px 0 -95px; }
+    margin: 0px 0px 0px -45px;
+    padding: 0px 0px 30px 64px;
+    margin: 0;
+    padding: 0; }
   .artwork img {
-    width: inherit; }
+    width: inherit;
+    margin: 0px; }
   .artwork {
     width: inherit; } }

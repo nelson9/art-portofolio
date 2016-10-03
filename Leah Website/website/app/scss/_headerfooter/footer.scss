@@ -24,16 +24,20 @@ footer img {
 }
 
 .social-media{
-    margin: 0 auto;
-        width: 128px;
+  
+padding: 0 8px 0 8px;
+margin: 0 auto;
+width:135px;
 }
 
 .copyright{
     margin: 10px auto 10px auto;
-        width: 350px;
-
+ 
+padding: 0 8px 0 8px;
          p{
-            font-size: 0.75em;
+             @include font-size(12px);
+             text-align: center;
+             line-height: 20px;
           
         }
         a{
