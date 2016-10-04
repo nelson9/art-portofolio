@@ -19,6 +19,8 @@
     <script src="js/photoswipe-ui-default.min.js"></script>
 
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.js"></script>
+
 </head>
 <body>
 
@@ -63,41 +65,40 @@
 
     <main>
         <div class="row">
-            <div class="large-10 small-12">
                 <section class="selected-works">
                     <div class="gallery">
-                        <ul>
-                            <li>
+                        <div class="grid">
+                            <div class="grid-item">
                                 <figure>
                                     <a href="img/artwork1.png" itemprop="contentUrl" data-size="1024x1024">
                                         <img src="img/artwork1.png" itemprop="thumbnail" alt="Image description" />
                                     </a>
-                                    <figcaption itemprop="caption description">Image caption 1</figcaption>
+                                    <figcaption itemprop="caption description">Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</figcaption>
                                 </figure>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="grid-item grid-item--width2">
                                 <figure>
                                     <a href="img/artwork2.png" itemprop="contentUrl" data-size="964x1024">
                                         <img src="img/artwork2.png" itemprop="thumbnail" alt="Image description" />
                                     </a>
-                                    <figcaption itemprop="caption description">Image caption 2</figcaption>
+                                    <figcaption itemprop="caption description">Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</figcaption>
                                 </figure>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="grid-item">
                                 <figure>
                                     <a href="img/artwork3.jpg" itemprop="contentUrl" data-size="1024x683">
                                         <img src="img/artwork3.jpg" itemprop="thumbnail" alt="Image description" />
                                     </a>
-                                    <figcaption itemprop="caption description">Image caption 3</figcaption>
+                                    <figcaption itemprop="caption description">Slip sliding I, mono-printed fabric and found object, aprox. 40cm x 40cm</figcaption>
                                 </figure>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="pswp__bg"></div>
 
-                  
+
                         <div class="pswp__scroll-wrap">
                             <div class="pswp__container">
                                 <div class="pswp__item"></div>
@@ -139,7 +140,7 @@
 
                     </div>
                 </section>
-            </div>
+           
         </div>
     </main>
 

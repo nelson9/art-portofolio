@@ -57,11 +57,10 @@ body {
 }
 
 h1 a{
-  @include font-size(24px);
+  @include font-size(30px);
   font-family: 'Carrois Gothic', sans-serif;
   color: #302C3B; 
-  line-height: 33px;
-  font-weight: 700;    
+  line-height: 33px;     
   text-decoration: none;
 }
 

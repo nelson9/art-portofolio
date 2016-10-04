@@ -764,12 +764,11 @@ body {
   visibility: hidden; }
 
 h1 a {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'Carrois Gothic', sans-serif;
   color: #302C3B;
   line-height: 33px;
-  font-weight: 700;
   text-decoration: none; }
 
 h2 {
@@ -1315,13 +1314,15 @@ a.pswp__share--download:hover {
     color: #BBB; }
 
 .pswp__caption__center {
-  text-align: left;
+  text-align: center;
   max-width: 420px;
   margin: 0 auto;
-  font-size: 13px;
+  font-size: 12px;
+  font-size: 0.75rem;
   padding: 10px;
   line-height: 20px;
-  color: #CCC; }
+  color: #CCC;
+  font-family: 'Libre Franklin', sans-serif; }
 
 .pswp__caption--empty {
   display: none; }
@@ -1764,3 +1765,6 @@ section.project {
     margin: 0px; }
   .artwork {
     width: inherit; } }
+
+/*.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }*/
