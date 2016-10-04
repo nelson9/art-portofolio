@@ -1,0 +1,20 @@
+﻿.gallery {
+    width: 100%;
+    float: left;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery figure {
+    display: block;
+    float: left;
+    margin: 0 0px 5px 0;
+    max-width:650px;
+}
+
+.gallery figcaption {
+    display: none;
+}
