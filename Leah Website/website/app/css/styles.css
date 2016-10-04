@@ -1045,7 +1045,7 @@ footer img {
 .gallery figure {
   display: block;
   float: left;
-  margin: 0 0px 5px 0;
+  margin: 0 5px 5px 0;
   max-width: 650px; }
 
 .gallery figcaption {
@@ -1766,5 +1766,9 @@ section.project {
   .artwork {
     width: inherit; } }
 
-/*.grid-item { width: 200px; }
-.grid-item--width2 { width: 400px; }*/
+.grid-item {
+  width: 250px;
+  float: left; }
+
+.grid-item--width2 {
+  width: 500px; }
