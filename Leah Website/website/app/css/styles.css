@@ -1051,6 +1051,11 @@ footer img {
   height: 370px;
   object-fit: cover; }
 
+.gallery .grid-item--height2 img {
+  width: 495px;
+  height: 750px;
+  object-fit: cover; }
+
 .gallery figure {
   display: block;
   float: right;
@@ -1683,7 +1688,7 @@ a.pswp__share--download:hover {
   text-decoration: underline; }
 
 .home-content {
-  background-image: url("../img/Image 6.jpg");
+  background-image: url("../../img/asdf.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -1691,7 +1696,8 @@ a.pswp__share--download:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 960px; }
+  height: 860px;
+  padding: 0px 50px 0 50px; }
 
 .home-about {
   background-color: #363738;
@@ -1784,6 +1790,9 @@ section.project {
 .grid-item--width2 {
   width: 500px; }
 
+.grid-item--height2 {
+  height: 760px; }
+
 .grid {
   max-width: 1500px;
   margin: 0 auto; }
@@ -1796,3 +1805,7 @@ section.project {
 .first{
     margin-left:150px;
 }*/
+.home-bio {
+  padding: 800px 0 20px 50px;
+  font-size: 1.875rem;
+  font-family: 'Carrois Gothic', sans-serif; }
