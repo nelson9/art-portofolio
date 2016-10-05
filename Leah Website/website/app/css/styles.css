@@ -1042,12 +1042,12 @@ footer img {
   float: left; }
 
 .gallery img {
-  width: 240px;
+  width: 245px;
   height: 370px;
   object-fit: cover; }
 
 .gallery .grid-item--width2 img {
-  width: 490px;
+  width: 495px;
   height: 370px;
   object-fit: cover; }
 
