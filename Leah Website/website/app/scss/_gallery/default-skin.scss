@@ -220,13 +220,13 @@
 	transition: transform 0.25s;
 	-webkit-backface-visibility: hidden;
 	will-change: transform;
-
+    font-family: 'Libre Franklin', sans-serif;
 	a {
 		display: block;
 		padding: 8px 12px;
 		color: #000;
 		text-decoration: none;
-		font-size: 14px;
+		 @include font-size(14px);
 		line-height: 18px;
 
 		&:hover {

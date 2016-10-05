@@ -53,7 +53,7 @@ function initPhotoSwipeFromDOM(gallerySelector) {
     // parse slide data (url, title, size ...) from DOM elements
     // (children of gallerySelector)
     var parseThumbnailElements = function (el) {
-        var thumbElements = el.childNodes,
+        var thumbElements = $('figure'),
             numNodes = thumbElements.length,
             items = [],
             figureEl,
@@ -66,7 +66,7 @@ function initPhotoSwipeFromDOM(gallerySelector) {
             figureEl = thumbElements[i]; // <figure> element
 
             // include only element nodes
-            if (figureEl.nodeType !== 1) {
+            if (figureEl.nodeName !== "FIGURE") {
                 continue;
             }
 
@@ -121,10 +121,12 @@ function initPhotoSwipeFromDOM(gallerySelector) {
             return;
         }
 
+        var imageList = $('figure');
+
         // find index of clicked item by looping through all child nodes
         // alternatively, you may define index via data- attribute
         var clickedGallery = clickedListItem.parentNode,
-            childNodes = clickedListItem.parentNode.childNodes,
+            childNodes = imageList,
             numChildNodes = childNodes.length,
             nodeIndex = 0,
             index;
@@ -226,7 +228,6 @@ function initPhotoSwipeFromDOM(gallerySelector) {
         if (isNaN(options.index)) {
             return;
         }
-
         if (disableAnimation) {
             options.showAnimationDuration = 0;
         }

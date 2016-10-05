@@ -163,10 +163,24 @@ section.project {
 
 .grid-item { 
     width: 250px; 
-    float: left;
-
+    float: right;
+    height: 380px;
 }
 .grid-item--width2 { 
     width: 500px; 
 
 }
+
+.grid{
+    max-width:1500px;
+    margin: 0 auto;
+}
+
+/*.last{
+    margin-right:150px;
+
+}
+
+.first{
+    margin-left:150px;
+}*/

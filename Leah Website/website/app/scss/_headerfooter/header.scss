@@ -24,6 +24,10 @@ nav li a {
     margin-left: 10px;
     display: inline-block;
     padding-bottom: 10px;
+    transition: border-bottom 0.08s;
+    -moz-transition: border-bottom 0.08s;
+    -webkit-transition: border-bottom 0.08s;
+
 }
 
 .nav-bar {
@@ -75,6 +79,7 @@ nav li a {
 nav li a:hover, .active {
     border-bottom: 2px solid black;
     margin-bottom: -2px;
+    
 }
 
 
