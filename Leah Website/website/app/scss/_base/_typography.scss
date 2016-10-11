@@ -75,13 +75,18 @@ h2 {
 
 section.project h1 {
     font-family: 'Libre Franklin', sans-serif;  
-    @include font-size(39px);
-    color: #000000;
-    line-height: 45px;
-    margin: 30px 0px 35px 30px;
+    @include font-size(32px);
+    color: #000000;   
+    margin: 0px 0px 15px 0px;
     font-weight: 600;
 }
-
+section.project h2 {
+    font-family: 'Libre Franklin', sans-serif;  
+    @include font-size(18px);
+    color: #000000;   
+    margin: 0px 0px 15px 0px;
+    font-weight: 600;
+}
 .artwork-detail h1 {
     border-top: 1px solid black;
     @include artworkdetail;
@@ -131,10 +136,10 @@ section.project .img-description p {
 }
   section.project .intro  {
     font-family: 'Libre Franklin', sans-serif;  
-    @include font-size(18px);
-    color: #4A4A4A;
-    line-height: 35.2px;
-    margin: 5px 0px 25px 30px;
+    @include font-size(16px);
+    color: #4A4A4A;  
+    margin: 5px 0px 25px 0px;
+    line-height:28.2px
 }
 
 section.project .project-detail {
@@ -142,7 +147,7 @@ section.project .project-detail {
     @include font-size(14px);
     color: #000000;
     line-height: 27px;
-    margin: 20px 0px 20px 30px;
+    margin: 20px 0px 20px 0px;
 }
 
 

@@ -35,16 +35,46 @@ $(document).ready(function () {
         }
     });
 
-    //initPhotoSwipeFromDOM('.gallery');
+    initPhotoSwipeFromDOM('.gallery');
 
-    //var $grid = $('.grid').imagesLoaded(function () {
-    //    // init Masonry after all images have loaded
-    //    $grid.masonry({
-    //        itemSelector: '.grid-item',
-    //        columnWidth: 250
+    // var $grid = $('.grid').imagesLoaded(function () {
+    //     // init Masonry after all images have loaded
+    //     $grid.masonry({
+    //         itemSelector: '.grid-item',
+    //         columnWidth: 250
          
-    //    });
-    //});
+    //     });
+    // });
+
+   var currentIndex = 0,
+  items = $('.slider-container .slide'),
+  itemAmt = items.length;
+
+function cycleItems() {
+  var item = $('.slider-container .slide').eq(currentIndex);
+  items.hide();
+  item.css('display','inline-block');
+}
+
+
+
+$('.next').click(function() {
+ 
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+});
+
+$('.prev').click(function() {
+  
+  currentIndex -= 1;
+  if (currentIndex < 0) {
+    currentIndex = itemAmt - 1;
+  }
+  cycleItems();
+});
 
     
 });
@@ -267,5 +297,5 @@ function cycleBackgrounds() {
         // Hide the previous image.
         $imageEls.eq(index - 1).removeClass('show');
 
-    }, 2000);
+    }, 5500);
 };

@@ -782,11 +782,18 @@ h2 {
 
 section.project h1 {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 39px;
-  font-size: 2.4375rem;
+  font-size: 32px;
+  font-size: 2rem;
   color: #000000;
-  line-height: 45px;
-  margin: 30px 0px 35px 30px;
+  margin: 0px 0px 15px 0px;
+  font-weight: 600; }
+
+section.project h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #000000;
+  margin: 0px 0px 15px 0px;
   font-weight: 600; }
 
 .artwork-detail h1 {
@@ -837,11 +844,11 @@ section.project .img-description p {
 
 section.project .intro {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   color: #4A4A4A;
-  line-height: 35.2px;
-  margin: 5px 0px 25px 30px; }
+  margin: 5px 0px 25px 0px;
+  line-height: 28.2px; }
 
 section.project .project-detail {
   font-family: 'Libre Franklin', sans-serif;
@@ -849,7 +856,7 @@ section.project .project-detail {
   font-size: 0.875rem;
   color: #000000;
   line-height: 27px;
-  margin: 20px 0px 20px 30px; }
+  margin: 20px 0px 20px 0px; }
 
 .artwork-detail p {
   font-family: 'Libre Franklin', sans-serif;
@@ -1008,11 +1015,12 @@ nav li a:hover, .active {
   background-color: rgba(255, 255, 255, 0.25); }
 
 footer {
-  margin-top: 70px;
-  height: 56px;
+  height: 90px;
   width: 100%;
   background-color: white;
-  padding-top: 20px; }
+  padding-top: 40px;
+  position: fixed;
+  bottom: 0; }
 
 footer a {
   margin-left: 0px; }
@@ -1739,7 +1747,6 @@ img.no-indent {
   visibility: hidden; }
 
 section.selected-works {
-  border-bottom: 0.5px solid #E5E5E5;
   margin: 0px 0px 0px -45px;
   padding: 0px 0px 30px 64px;
   display: block;
@@ -1750,7 +1757,6 @@ section.selected-works {
     transition: 0.8s; }
 
 section.project {
-  border-bottom: 0.5px solid #E5E5E5;
   margin: 0px 0px 0px -45px;
   padding: 0px 0px 30px 64px; }
 
@@ -1763,7 +1769,6 @@ section.project {
   section.selected-works {
     margin: 0px 10px 0 -95px; }
   section.project {
-    border-bottom: 0.5px solid #E5E5E5;
     margin: 0px 0px 0px -45px;
     padding: 0px 0px 30px 64px;
     margin: 0;
@@ -1815,7 +1820,7 @@ section.project {
   top: 80px;
   left: 0;
   height: 800px;
-  transition: opacity 3s ease-in-out; }
+  transition: opacity 3.5s ease-in-out; }
 
 /* Styles for the specific images. */
 .first-image {
@@ -1841,3 +1846,49 @@ section.project {
 
 .third-image.show {
   opacity: 1; }
+
+.slider-container {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  height: 90%; }
+
+.slider-container .slide {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+  transition: display 3s ease-in-out; }
+
+.slider-container img {
+  width: 100%;
+  height: auto;
+  float: right; }
+
+container-project {
+  width: 90%; }
+
+.next {
+  right: 0px;
+  position: absolute;
+  font-size: 50px;
+  cursor: pointer;
+  top: 350px; }
+
+.next:hover, .prev:hover {
+  color: #878787;
+  transition: color 0.25s ease-in-out; }
+
+.prev {
+  left: 0px;
+  position: absolute;
+  font-size: 50px;
+  cursor: pointer;
+  top: 350px; }
+
+.inline-image {
+  max-width: 50% !important;
+  display: inline-block !important;
+  margin-right: 5px;
+  margin-top: 5px;
+  float: left !important; }

@@ -103,21 +103,21 @@ img.no-indent {
 
 //projects
 @mixin section-content {
-    border-bottom: 0.5px solid #E5E5E5;
     margin: 0px 0px 0px -45px;
     padding: 0px 0px 30px 64px;
 }
 
 section.selected-works {
     @include section-content;
-    li{
-        float:left;
-        margin-right:10px;
+
+    li {
+        float: left;
+        margin-right: 10px;
         transition: 0.8s;
     }
- 
-    display:block;
-    border-bottom:none; 
+
+    display: block;
+    border-bottom: none;
 }
 
 section.project {
@@ -154,23 +154,22 @@ section.project {
     }
 }
 
-.grid-item { 
-    width: 250px; 
+.grid-item {
+    width: 250px;
     float: right;
     height: 380px;
 }
-.grid-item--width2 { 
-    width: 500px; 
 
+.grid-item--width2 {
+    width: 500px;
 }
 
-.grid-item--height2 { 
-     height: 760px;
-
+.grid-item--height2 {
+    height: 760px;
 }
 
-.grid{
-    max-width:1500px;
+.grid {
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -183,56 +182,112 @@ section.project {
     margin-left:150px;
 }*/
 
-.home-bio{
-    padding:800px 0 20px 50px;
+.home-bio {
+    padding: 800px 0 20px 50px;
     font-size: 1.875rem;
     font-family: 'Carrois Gothic', sans-serif;
 }
 
 /* Basic background image styling. */
 .background-image {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Styles for the alternating / transition effect. */
 .toggle-image {
- 	position: absolute;
-	width: 100%;
-	top: 80px;
-	left: 0;
- 	height: 800px;
-	transition: opacity 3s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    height: 800px;
+    transition: opacity 3.5s ease-in-out;
 }
 
 /* Styles for the specific images. */
 .first-image {
-	background-image: url('../../img/asdf.png');	
-	z-index: -3;
-	opacity: 0;
+    background-image: url('../../img/asdf.png');
+    z-index: -3;
+    opacity: 0;
 }
 
 .second-image {
-	background-image: url('../../img/Image 6.jpg');
-	z-index: -2;
-	opacity: 0;
+    background-image: url('../../img/Image 6.jpg');
+    z-index: -2;
+    opacity: 0;
 }
 
 .third-image {
-	background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
-	z-index: -1;
-	opacity: 0;
+    background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
+    z-index: -1;
+    opacity: 0;
 }
 
 .first-image.show {
-	opacity: 1;
+    opacity: 1;
 }
 
 .second-image.show {
-	opacity: 1;
+    opacity: 1;
 }
 
 .third-image.show {
-	opacity: 1;
+    opacity: 1;
+}
+
+
+
+.slider-container {
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 90%;
+}
+
+.slider-container .slide {
+    background-color: white;
+    width: 100%;
+    display: inline-block;
+    display: none;
+    transition: display 3s ease-in-out;
+}
+
+.slider-container img {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+container-project {
+    width: 90%;
+}
+
+.next {
+    right: 0px;
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    top: 350px;
+}
+
+.next:hover, .prev:hover {
+    color: #878787;
+    transition: color 0.25s ease-in-out;
+}
+
+.prev {
+    left: 0px;
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    top: 350px;
+}
+
+.inline-image{
+    max-width:50%!important;
+    display:inline-block!important;
+    margin-right:5px;
+    margin-top:5px;
+    float:left!important;
 }
